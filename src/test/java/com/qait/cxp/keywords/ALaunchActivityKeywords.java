@@ -33,12 +33,12 @@ public class ALaunchActivityKeywords extends ALaunchActivityPage{
 		Select clickThis = new Select(presetsDropDown);
 		clickThis.selectByVisibleText("Chemistry \"simple\" with test content");
 		waitForElementToBeVisible(takeactivityButton);
-		//Assert.assertTrue(activityXmlTextArea.getAttribute("value").endsWith("</activity>"));
+		Thread.sleep(1000);
+		Assert.assertTrue(activityXmlTextArea.getAttribute("value").endsWith("</activity>"));
 
 	}
 	
-	public void clickTakeActivity() throws Exception {
-		Thread.sleep(10000);
+	public void clickTackAssignment(){
 		takeactivityButton.click();
 		System.out.println("Test3 of load is executed");
 	}

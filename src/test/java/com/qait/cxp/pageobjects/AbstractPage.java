@@ -19,7 +19,7 @@ public abstract class AbstractPage {
 	public AbstractPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(
-				new AjaxElementLocatorFactory(this.driver, 30), this);
+				new AjaxElementLocatorFactory(this.driver, 15), this);
 		wait = new WebDriverWait(driver, waitTimeInSec * 1000);
 
 	}

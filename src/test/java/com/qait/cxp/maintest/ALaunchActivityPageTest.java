@@ -19,14 +19,17 @@ public class ALaunchActivityPageTest extends BaseDSLLib {
 		lnchActPageObject.verifyActivityPageHeader();
 	}
 
-
 	@Test
 	public void verify_Select_Xml_and_Load() throws Exception {
 		lnchActPageObject.verifySelectXmlandLoad();
 	}
+	
 	@Test
-	public void verify_Click_Take_Activity()  throws Exception {
-		lnchActPageObject.clickTakeActivity();
+	public void verify_Take_Assignment() throws Exception{
+		lnchActPageObject.clickTackAssignment();
 	}
+	
+	
+
 
 }

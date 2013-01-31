@@ -1,10 +1,7 @@
 package com.qait.cxp.dsl;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 
@@ -24,9 +21,7 @@ public class BaseDSLLib {
 	}
 
 	public void launchBrowser() throws Exception {
-		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-capabilities.setJavascriptEnabled(true);
- driver = new ChromeDriver(capabilities);
+		driver = new FirefoxDriver();
 		_initPageObjects();
 	}
 
