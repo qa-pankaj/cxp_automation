@@ -1,0 +1,264 @@
+<html>
+<head>
+<title>TestNG:  Command line test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Command line test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>37/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Feb 12 14:11:45 EST 2013</td>
+</tr>
+<tr><td>Total time:</td><td>41 seconds (41422 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qait.cxp.maintest.ALaunchActivityPageTest.verifyActivityPageHeader()'><b>verifyActivityPageHeader</b><br>Test class: com.qait.cxp.maintest.ALaunchActivityPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.qait.cxp.maintest.ALaunchActivityPageTest@b2771</td></tr>
+<tr>
+<td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyClickOnHideHint()'><b>verifyClickOnHideHint</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
+<td></td>
+<td>0</td>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@4a897c</td></tr>
+<tr>
+<td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyClickOnReferencesButtonShowsReferencesList()'><b>verifyClickOnReferencesButtonShowsReferencesList</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
+<td></td>
+<td>0</td>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@4a897c</td></tr>
+<tr>
+<td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyClickOnReviewTopicButton()'><b>verifyClickOnReviewTopicButton</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
+<td></td>
+<td>0</td>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@4a897c</td></tr>
+<tr>
+<td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyClickingOnReferencesShowsReferencesPage()'><b>verifyClickingOnReferencesShowsReferencesPage</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
+<td></td>
+<td>0</td>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@4a897c</td></tr>
+<tr>
+<td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyClickingOnReviewTopicShowsReviewTopicPage()'><b>verifyClickingOnReviewTopicShowsReviewTopicPage</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
+<td></td>
+<td>0</td>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@4a897c</td></tr>
+<tr>
+<td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyClickingOnShowHintButtonShowsHint()'><b>verifyClickingOnShowHintButtonShowsHint</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
+<td></td>
+<td>0</td>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@4a897c</td></tr>
+<tr>
+<td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyClickingOnTryAnotherVersionReloadsFITBItem()'><b>verifyClickingOnTryAnotherVersionReloadsFITBItem</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
+<td></td>
+<td>0</td>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@4a897c</td></tr>
+<tr>
+<td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyClickingOnTryAnotherVersionReloadsMultipleChoiceItem()'><b>verifyClickingOnTryAnotherVersionReloadsMultipleChoiceItem</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
+<td></td>
+<td>0</td>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@4a897c</td></tr>
+<tr>
+<td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyClikingOnNextLinkLoadsNextFITBItem()'><b>verifyClikingOnNextLinkLoadsNextFITBItem</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
+<td></td>
+<td>0</td>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@4a897c</td></tr>
+<tr>
+<td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyCloseReviewTopics()'><b>verifyCloseReviewTopics</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
+<td></td>
+<td>0</td>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@4a897c</td></tr>
+<tr>
+<td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyClosingReferencesPage()'><b>verifyClosingReferencesPage</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
+<td></td>
+<td>0</td>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@4a897c</td></tr>
+<tr>
+<td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyMultipleChoiceItemIsLoaded()'><b>verifyMultipleChoiceItemIsLoaded</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
+<td></td>
+<td>2</td>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@4a897c</td></tr>
+<tr>
+<td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyNextLinkOnFITBItemAfterSubmitIsActive()'><b>verifyNextLinkOnFITBItemAfterSubmitIsActive</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
+<td></td>
+<td>0</td>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@4a897c</td></tr>
+<tr>
+<td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyNextLinkOnMultipleChoiceItemAfterSubmitIsActive()'><b>verifyNextLinkOnMultipleChoiceItemAfterSubmitIsActive</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
+<td></td>
+<td>0</td>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@4a897c</td></tr>
+<tr>
+<td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyNextLinkOnMultipleChoiceItemBeforeSubmitIsActive()'><b>verifyNextLinkOnMultipleChoiceItemBeforeSubmitIsActive</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
+<td></td>
+<td>0</td>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@4a897c</td></tr>
+<tr>
+<td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyReviewTopicButtonIsEnabled()'><b>verifyReviewTopicButtonIsEnabled</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
+<td></td>
+<td>0</td>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@4a897c</td></tr>
+<tr>
+<td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyReviewTopicsAppear()'><b>verifyReviewTopicsAppear</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
+<td></td>
+<td>0</td>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@4a897c</td></tr>
+<tr>
+<td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyShowHintButtonIsEnabled()'><b>verifyShowHintButtonIsEnabled</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
+<td></td>
+<td>0</td>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@4a897c</td></tr>
+<tr>
+<td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifySubmitAnswerButtonOnFITBItemAfterSubmitAndReloadIsActive()'><b>verifySubmitAnswerButtonOnFITBItemAfterSubmitAndReloadIsActive</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
+<td></td>
+<td>0</td>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@4a897c</td></tr>
+<tr>
+<td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifySubmitAnswerButtonOnFITBItemAfterSubmitIsInactive()'><b>verifySubmitAnswerButtonOnFITBItemAfterSubmitIsInactive</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
+<td></td>
+<td>0</td>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@4a897c</td></tr>
+<tr>
+<td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifySubmitAnswerButtonOnFITBItemAfterSubmitReloadAndSubmitIsInactive()'><b>verifySubmitAnswerButtonOnFITBItemAfterSubmitReloadAndSubmitIsInactive</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
+<td></td>
+<td>0</td>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@4a897c</td></tr>
+<tr>
+<td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifySubmitAnswerButtonOnMultipleChoiceAfterSubmitAndReloadIsActive()'><b>verifySubmitAnswerButtonOnMultipleChoiceAfterSubmitAndReloadIsActive</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
+<td></td>
+<td>0</td>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@4a897c</td></tr>
+<tr>
+<td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifySubmitAnswerButtonOnMultipleChoiceItemAfterSubmitIsInactive()'><b>verifySubmitAnswerButtonOnMultipleChoiceItemAfterSubmitIsInactive</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
+<td></td>
+<td>0</td>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@4a897c</td></tr>
+<tr>
+<td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifySubmitAnswerButtonOnMultipleChoiceItemAfterSubmitReloadAndSubmitIsInactive()'><b>verifySubmitAnswerButtonOnMultipleChoiceItemAfterSubmitReloadAndSubmitIsInactive</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
+<td></td>
+<td>0</td>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@4a897c</td></tr>
+<tr>
+<td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifySubmitAnswerButtonOnMultipleChoiceItemBeforeSubmitIsActive()'><b>verifySubmitAnswerButtonOnMultipleChoiceItemBeforeSubmitIsActive</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
+<td></td>
+<td>0</td>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@4a897c</td></tr>
+<tr>
+<td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifySubmittingCorrectAnswerForFITBShowsCorrectRejoinder()'><b>verifySubmittingCorrectAnswerForFITBShowsCorrectRejoinder</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
+<td></td>
+<td>0</td>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@4a897c</td></tr>
+<tr>
+<td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifySubmittingCorrectAnswerForMultipleChoiceShowsShowsCorrectRejoinder()'><b>verifySubmittingCorrectAnswerForMultipleChoiceShowsShowsCorrectRejoinder</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
+<td></td>
+<td>0</td>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@4a897c</td></tr>
+<tr>
+<td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifySubmittingIncorrectAnswerForMultipleChoiceShowsIncorrectRejoinder()'><b>verifySubmittingIncorrectAnswerForMultipleChoiceShowsIncorrectRejoinder</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
+<td></td>
+<td>0</td>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@4a897c</td></tr>
+<tr>
+<td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyTryAnotherButtonOnFITBItemAfterSubmitAndReloadIsInactive()'><b>verifyTryAnotherButtonOnFITBItemAfterSubmitAndReloadIsInactive</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
+<td></td>
+<td>0</td>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@4a897c</td></tr>
+<tr>
+<td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyTryAnotherButtonOnMultipleChoiceItemAfterSubmitAndReloadIsInactive()'><b>verifyTryAnotherButtonOnMultipleChoiceItemAfterSubmitAndReloadIsInactive</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
+<td></td>
+<td>0</td>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@4a897c</td></tr>
+<tr>
+<td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyTryAnotherButtonOnMultipleChoiceItemBeforeSubmitIsInactive()'><b>verifyTryAnotherButtonOnMultipleChoiceItemBeforeSubmitIsInactive</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
+<td></td>
+<td>0</td>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@4a897c</td></tr>
+<tr>
+<td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyTryAnotherVersionButtonOnFITBItemAfterSubmitIsActive()'><b>verifyTryAnotherVersionButtonOnFITBItemAfterSubmitIsActive</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
+<td></td>
+<td>0</td>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@4a897c</td></tr>
+<tr>
+<td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyTryAnotherVersionButtonOnFITBItemAfterSubmitReloadAndSubmitIsActive()'><b>verifyTryAnotherVersionButtonOnFITBItemAfterSubmitReloadAndSubmitIsActive</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
+<td></td>
+<td>0</td>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@4a897c</td></tr>
+<tr>
+<td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyTryAnotherVersionButtonOnMultipleChoiceItemAfterSubmitIsActive()'><b>verifyTryAnotherVersionButtonOnMultipleChoiceItemAfterSubmitIsActive</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
+<td></td>
+<td>0</td>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@4a897c</td></tr>
+<tr>
+<td title='com.qait.cxp.maintest.ALaunchActivityPageTest.verify_Select_Xml_and_Load()'><b>verify_Select_Xml_and_Load</b><br>Test class: com.qait.cxp.maintest.ALaunchActivityPageTest</td>
+<td></td>
+<td>2</td>
+<td>com.qait.cxp.maintest.ALaunchActivityPageTest@b2771</td></tr>
+<tr>
+<td title='com.qait.cxp.maintest.ALaunchActivityPageTest.verify_Take_Assignment()'><b>verify_Take_Assignment</b><br>Test class: com.qait.cxp.maintest.ALaunchActivityPageTest</td>
+<td></td>
+<td>2</td>
+<td>com.qait.cxp.maintest.ALaunchActivityPageTest@b2771</td></tr>
+</table><p>
+</body>
+</html>

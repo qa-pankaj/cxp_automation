@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="37" passed="37">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="41422" started-at="2013-02-12T14:11:45Z" finished-at="2013-02-12T14:12:27Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="41422" started-at="2013-02-12T14:11:45Z" finished-at="2013-02-12T14:12:27Z">
+      <class name="com.qait.cxp.maintest.ALaunchActivityPageTest">
+        <test-method status="PASS" signature="startBrowser()" name="startBrowser" is-config="true" duration-ms="30141" started-at="2013-02-12T14:11:45Z" finished-at="2013-02-12T14:12:16Z">
+        </test-method>
+        <test-method status="PASS" signature="verifyActivityPageHeader()" name="verifyActivityPageHeader" duration-ms="78" started-at="2013-02-12T14:12:16Z" finished-at="2013-02-12T14:12:16Z">
+        </test-method>
+        <test-method status="PASS" signature="verify_Select_Xml_and_Load()" name="verify_Select_Xml_and_Load" duration-ms="2562" started-at="2013-02-12T14:12:16Z" finished-at="2013-02-12T14:12:18Z">
+        </test-method>
+        <test-method status="PASS" signature="verify_Take_Assignment()" name="verify_Take_Assignment" duration-ms="2375" started-at="2013-02-12T14:12:18Z" finished-at="2013-02-12T14:12:21Z">
+        </test-method>
+      </class>
+      <class name="com.qait.cxp.maintest.BSimpleTestContentLaunchTest">
+        <test-method status="PASS" signature="verifySimpleTestContentPageHeader()" name="verifySimpleTestContentPageHeader" is-config="true" duration-ms="1063" started-at="2013-02-12T14:12:21Z" finished-at="2013-02-12T14:12:22Z">
+        </test-method>
+        <test-method status="PASS" signature="verifyClickingOnShowHintButtonShowsHint()" name="verifyClickingOnShowHintButtonShowsHint" duration-ms="0" started-at="2013-02-12T14:12:22Z" finished-at="2013-02-12T14:12:22Z">
+        </test-method>
+        <test-method status="PASS" signature="verifyMultipleChoiceItemIsLoaded()" name="verifyMultipleChoiceItemIsLoaded" duration-ms="2562" started-at="2013-02-12T14:12:22Z" finished-at="2013-02-12T14:12:24Z">
+        </test-method>
+        <test-method status="PASS" signature="verifyClosingReferencesPage()" name="verifyClosingReferencesPage" duration-ms="0" started-at="2013-02-12T14:12:22Z" finished-at="2013-02-12T14:12:22Z">
+        </test-method>
+        <test-method status="PASS" signature="verifyClickingOnTryAnotherVersionReloadsFITBItem()" name="verifyClickingOnTryAnotherVersionReloadsFITBItem" duration-ms="0" started-at="2013-02-12T14:12:22Z" finished-at="2013-02-12T14:12:22Z">
+        </test-method>
+        <test-method status="PASS" signature="verifyClickOnHideHint()" name="verifyClickOnHideHint" duration-ms="0" started-at="2013-02-12T14:12:22Z" finished-at="2013-02-12T14:12:22Z">
+        </test-method>
+        <test-method status="PASS" signature="verifyClickingOnTryAnotherVersionReloadsMultipleChoiceItem()" name="verifyClickingOnTryAnotherVersionReloadsMultipleChoiceItem" duration-ms="0" started-at="2013-02-12T14:12:22Z" finished-at="2013-02-12T14:12:22Z">
+        </test-method>
+        <test-method status="PASS" signature="verifyClickingOnReviewTopicShowsReviewTopicPage()" name="verifyClickingOnReviewTopicShowsReviewTopicPage" duration-ms="0" started-at="2013-02-12T14:12:22Z" finished-at="2013-02-12T14:12:22Z">
+        </test-method>
+        <test-method status="PASS" signature="verifyClickingOnReferencesShowsReferencesPage()" name="verifyClickingOnReferencesShowsReferencesPage" duration-ms="0" started-at="2013-02-12T14:12:22Z" finished-at="2013-02-12T14:12:22Z">
+        </test-method>
+        <test-method status="PASS" signature="verifyClickOnReviewTopicButton()" name="verifyClickOnReviewTopicButton" duration-ms="0" started-at="2013-02-12T14:12:22Z" finished-at="2013-02-12T14:12:22Z">
+        </test-method>
+        <test-method status="PASS" signature="verifyClickOnReferencesButtonShowsReferencesList()" name="verifyClickOnReferencesButtonShowsReferencesList" duration-ms="0" started-at="2013-02-12T14:12:22Z" finished-at="2013-02-12T14:12:22Z">
+        </test-method>
+        <test-method status="PASS" signature="verifyCloseReviewTopics()" name="verifyCloseReviewTopics" duration-ms="0" started-at="2013-02-12T14:12:22Z" finished-at="2013-02-12T14:12:22Z">
+        </test-method>
+        <test-method status="PASS" signature="verifyClikingOnNextLinkLoadsNextFITBItem()" name="verifyClikingOnNextLinkLoadsNextFITBItem" duration-ms="0" started-at="2013-02-12T14:12:22Z" finished-at="2013-02-12T14:12:22Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="2641" started-at="2013-02-12T14:12:24Z" finished-at="2013-02-12T14:12:27Z">
+        </test-method>
+        <test-method status="PASS" signature="verifyTryAnotherVersionButtonOnMultipleChoiceItemAfterSubmitIsActive()" name="verifyTryAnotherVersionButtonOnMultipleChoiceItemAfterSubmitIsActive" duration-ms="0" started-at="2013-02-12T14:12:24Z" finished-at="2013-02-12T14:12:24Z">
+        </test-method>
+        <test-method status="PASS" signature="verifyTryAnotherButtonOnFITBItemAfterSubmitAndReloadIsInactive()" name="verifyTryAnotherButtonOnFITBItemAfterSubmitAndReloadIsInactive" duration-ms="0" started-at="2013-02-12T14:12:24Z" finished-at="2013-02-12T14:12:24Z">
+        </test-method>
+        <test-method status="PASS" signature="verifyReviewTopicsAppear()" name="verifyReviewTopicsAppear" duration-ms="0" started-at="2013-02-12T14:12:24Z" finished-at="2013-02-12T14:12:24Z">
+        </test-method>
+        <test-method status="PASS" signature="verifyTryAnotherVersionButtonOnFITBItemAfterSubmitIsActive()" name="verifyTryAnotherVersionButtonOnFITBItemAfterSubmitIsActive" duration-ms="0" started-at="2013-02-12T14:12:24Z" finished-at="2013-02-12T14:12:24Z">
+        </test-method>
+        <test-method status="PASS" signature="verifySubmitAnswerButtonOnMultipleChoiceItemAfterSubmitIsInactive()" name="verifySubmitAnswerButtonOnMultipleChoiceItemAfterSubmitIsInactive" duration-ms="0" started-at="2013-02-12T14:12:24Z" finished-at="2013-02-12T14:12:24Z">
+        </test-method>
+        <test-method status="PASS" signature="verifyTryAnotherButtonOnMultipleChoiceItemAfterSubmitAndReloadIsInactive()" name="verifyTryAnotherButtonOnMultipleChoiceItemAfterSubmitAndReloadIsInactive" duration-ms="0" started-at="2013-02-12T14:12:24Z" finished-at="2013-02-12T14:12:24Z">
+        </test-method>
+        <test-method status="PASS" signature="verifySubmitAnswerButtonOnFITBItemAfterSubmitIsInactive()" name="verifySubmitAnswerButtonOnFITBItemAfterSubmitIsInactive" duration-ms="0" started-at="2013-02-12T14:12:24Z" finished-at="2013-02-12T14:12:24Z">
+        </test-method>
+        <test-method status="PASS" signature="verifySubmitAnswerButtonOnMultipleChoiceItemBeforeSubmitIsActive()" name="verifySubmitAnswerButtonOnMultipleChoiceItemBeforeSubmitIsActive" duration-ms="0" started-at="2013-02-12T14:12:24Z" finished-at="2013-02-12T14:12:24Z">
+        </test-method>
+        <test-method status="PASS" signature="verifySubmitAnswerButtonOnFITBItemAfterSubmitReloadAndSubmitIsInactive()" name="verifySubmitAnswerButtonOnFITBItemAfterSubmitReloadAndSubmitIsInactive" duration-ms="0" started-at="2013-02-12T14:12:24Z" finished-at="2013-02-12T14:12:24Z">
+        </test-method>
+        <test-method status="PASS" signature="verifyTryAnotherButtonOnMultipleChoiceItemBeforeSubmitIsInactive()" name="verifyTryAnotherButtonOnMultipleChoiceItemBeforeSubmitIsInactive" duration-ms="0" started-at="2013-02-12T14:12:24Z" finished-at="2013-02-12T14:12:24Z">
+        </test-method>
+        <test-method status="PASS" signature="verifySubmittingCorrectAnswerForMultipleChoiceShowsShowsCorrectRejoinder()" name="verifySubmittingCorrectAnswerForMultipleChoiceShowsShowsCorrectRejoinder" duration-ms="0" started-at="2013-02-12T14:12:24Z" finished-at="2013-02-12T14:12:24Z">
+        </test-method>
+        <test-method status="PASS" signature="verifyNextLinkOnFITBItemAfterSubmitIsActive()" name="verifyNextLinkOnFITBItemAfterSubmitIsActive" duration-ms="0" started-at="2013-02-12T14:12:24Z" finished-at="2013-02-12T14:12:24Z">
+        </test-method>
+        <test-method status="PASS" signature="verifyReviewTopicButtonIsEnabled()" name="verifyReviewTopicButtonIsEnabled" duration-ms="0" started-at="2013-02-12T14:12:24Z" finished-at="2013-02-12T14:12:24Z">
+        </test-method>
+        <test-method status="PASS" signature="verifySubmittingIncorrectAnswerForMultipleChoiceShowsIncorrectRejoinder()" name="verifySubmittingIncorrectAnswerForMultipleChoiceShowsIncorrectRejoinder" duration-ms="0" started-at="2013-02-12T14:12:24Z" finished-at="2013-02-12T14:12:24Z">
+        </test-method>
+        <test-method status="PASS" signature="verifySubmitAnswerButtonOnMultipleChoiceItemAfterSubmitReloadAndSubmitIsInactive()" name="verifySubmitAnswerButtonOnMultipleChoiceItemAfterSubmitReloadAndSubmitIsInactive" duration-ms="0" started-at="2013-02-12T14:12:24Z" finished-at="2013-02-12T14:12:24Z">
+        </test-method>
+        <test-method status="PASS" signature="verifyNextLinkOnMultipleChoiceItemBeforeSubmitIsActive()" name="verifyNextLinkOnMultipleChoiceItemBeforeSubmitIsActive" duration-ms="0" started-at="2013-02-12T14:12:24Z" finished-at="2013-02-12T14:12:24Z">
+        </test-method>
+        <test-method status="PASS" signature="verifySubmitAnswerButtonOnMultipleChoiceAfterSubmitAndReloadIsActive()" name="verifySubmitAnswerButtonOnMultipleChoiceAfterSubmitAndReloadIsActive" duration-ms="0" started-at="2013-02-12T14:12:24Z" finished-at="2013-02-12T14:12:24Z">
+        </test-method>
+        <test-method status="PASS" signature="verifySubmittingCorrectAnswerForFITBShowsCorrectRejoinder()" name="verifySubmittingCorrectAnswerForFITBShowsCorrectRejoinder" duration-ms="0" started-at="2013-02-12T14:12:24Z" finished-at="2013-02-12T14:12:24Z">
+        </test-method>
+        <test-method status="PASS" signature="verifySubmitAnswerButtonOnFITBItemAfterSubmitAndReloadIsActive()" name="verifySubmitAnswerButtonOnFITBItemAfterSubmitAndReloadIsActive" duration-ms="0" started-at="2013-02-12T14:12:24Z" finished-at="2013-02-12T14:12:24Z">
+        </test-method>
+        <test-method status="PASS" signature="verifyTryAnotherVersionButtonOnFITBItemAfterSubmitReloadAndSubmitIsActive()" name="verifyTryAnotherVersionButtonOnFITBItemAfterSubmitReloadAndSubmitIsActive" duration-ms="0" started-at="2013-02-12T14:12:24Z" finished-at="2013-02-12T14:12:24Z">
+        </test-method>
+        <test-method status="PASS" signature="verifyNextLinkOnMultipleChoiceItemAfterSubmitIsActive()" name="verifyNextLinkOnMultipleChoiceItemAfterSubmitIsActive" duration-ms="0" started-at="2013-02-12T14:12:24Z" finished-at="2013-02-12T14:12:24Z">
+        </test-method>
+        <test-method status="PASS" signature="verifyShowHintButtonIsEnabled()" name="verifyShowHintButtonIsEnabled" duration-ms="0" started-at="2013-02-12T14:12:24Z" finished-at="2013-02-12T14:12:24Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>

@@ -1,0 +1,45 @@
+<activity type='cxp:jsp'>
+<handler>chemtest</handler>
+<items>
+<item handler='MC'>
+ <value name="narrative">data:text/xml;charset=UTF-8;base64,PGl0ZW0gaGFuZGxlcj0iTmFycmF0aXZlIj4NCjx2YWx1ZSBuYW1lPSJkaXNwbGF5bmFtZSI+T2ZmaWNpYWwgdGl0bGUgZ29lcyBoZXJlLi4uPC92YWx1ZT4NCjx2YWx1ZSBuYW1lPSJjb250ZW50Ij5IZWxsbywgSSdtIGEgTmFycmF0aXZlITwvdmFsZT4NCjwvaXRlbT4=</value>
+ <value name='question'>2^3 is...  (and by the way, a is <alg>a</alg>)</value>
+ <value name='choice1'>8</value>
+ <value name='choice2'>4</value>
+ <value name='choice3'>2</value>
+ <value name='score1'>1</value>
+ <value name="hints">Sample hint</value>
+ <value name="algorithm">var a = integer(100,999);</value>
+</item>
+<item handler='MC'>
+ <value name='question'>root(3,8) is...</value>
+ <value name='choice1'>2</value>
+ <value name='choice2'>4</value>
+ <value name='choice3'>8</value>
+ <value name='score1'>1</value>
+</item>
+<item handler='MC'>
+ <value name='question'>Homo Erectus dates back to approximately...</value>
+ <value name='choice1'>1,500,000 years ago</value>
+ <value name='choice2'>500,000,000 years ago</value>
+ <value name='choice3'>200,000 years ago</value>
+ <value name='choice4'>60,000 years ago</value>
+ <value name='score1'>1</value>
+</item>
+<item handler='MC'>
+ <value name='question'>Anatomically modern humans emerged about...</value>
+ <value name='choice1'>1,500,000 years ago</value>
+ <value name='choice2'>500,000,000 years ago</value>
+ <value name='choice3'>200,000 years ago</value>
+ <value name='choice4'>60,000 years ago</value>
+ <value name='score3'>1</value>
+</item>
+</items>
+<review>
+  <item title='Sample review item' handler='Static'><value name='content'>review content goes here</value></item>
+  <item title='Another review item' handler='Static'><value name='content'>more review content goes here</value></item>
+</review>
+<ebook>
+  <item title='Sample ebook link' handler='Static'><value name='content'>eBook link goes here</value></item>
+</ebook>
+</activity>

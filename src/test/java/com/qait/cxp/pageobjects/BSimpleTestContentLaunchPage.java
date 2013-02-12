@@ -15,30 +15,26 @@ public class BSimpleTestContentLaunchPage extends AbstractPage {
 		System.out.println("Object initialized for SimpleTest Page");
 	}
 
-	@FindBy(xpath = "//div/div[1]")
-	private WebElement simpleActivityTitle;
+	@FindBy(css = "div.page-heading")
+	protected WebElement simpleActivityTitle;
 
 	@FindBy(xpath = "//*[contains(@id, 'easyXDM_default')]")
-	private WebElement activityFrame;
+	protected WebElement activityFrame;
 
 	@FindBy(xpath = "/html/body/div/div[5]/div/div/div[4]/div")
-	private WebElement firstQuestionText;
+	protected WebElement firstQuestionText;
 	
 	@FindBy(css="div.title-bar")
-	private WebElement TakeAssingmentHeader;
+	protected WebElement TakeAssingmentHeader;
 	
 	@FindBy(how=How.CSS, using="a.assignment-button.show-scores")
-	private WebElement showScoreButton;
-
-	public void verifySimpleTestContentPageHeader() throws Exception {
-		waitForElementToBeVisible(simpleActivityTitle);
-		String str = simpleActivityTitle.getText();
-		System.out.println("Test1 of Simple Page" + str);
-	}
+	protected WebElement showScoreButton;
 	
-	public void getScoreButtonTextAndClick(){
-		waitForElementToBeVisible(showScoreButton);
-		System.out.println("Header Text Is:- " + showScoreButton.getText());
-		showScoreButton.click();
-	}
+	@FindBy(xpath = "//*[contains(@id, 'easyXDM_default')]")
+	protected WebElement frameApp;
+	
+	@FindBy (css="div.buttton.submit-button.enabled")
+	protected WebElement SubmitAnswerButton;
+	
+
 }

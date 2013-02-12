@@ -1,10 +1,10 @@
 package com.qait.cxp.maintest;
 
-import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import com.qait.cxp.dsl.*;
-
 public class ALaunchActivityPageTest extends BaseDSLLib {
 
 	@BeforeClass
@@ -26,10 +26,6 @@ public class ALaunchActivityPageTest extends BaseDSLLib {
 	
 	@Test
 	public void verify_Take_Assignment() throws Exception{
-		lnchActPageObject.clickTackAssignment();
-	}
-	
-	
-
+		lnchActPageObject.clickTakeActivity();}
 
 }
