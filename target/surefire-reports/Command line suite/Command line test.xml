@@ -1,189 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite hostname="MABOSPKUMAR-L1" name="com.qait.cxp.maintest.ALaunchActivityPageTest" tests="37" failures="1" timestamp="14 Feb 2013 17:17:58 GMT" time="30.171" errors="0">
-  <testcase name="@BeforeClass verifySimpleTestContentPageHeader" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest">
-    <failure type="org.openqa.selenium.remote.UnreachableBrowserException" message="Error communicating with the remote browser. It may have died.
-Build info: version: &amp;apos;2.28.0&amp;apos;, revision: &amp;apos;18309&amp;apos;, time: &amp;apos;2012-12-11 15:53:30&amp;apos;
-System info: os.name: &amp;apos;Windows XP&amp;apos;, os.arch: &amp;apos;x86&amp;apos;, os.version: &amp;apos;5.1&amp;apos;, java.version: &amp;apos;1.7.0_05&amp;apos;
-Driver info: driver.version: RemoteWebDriver">
-      <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 15:53:30'
-System info: os.name: 'Windows XP', os.arch: 'x86', os.version: '5.1', java.version: '1.7.0_05'
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:302)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:379)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:406)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:294)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
-	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.access$001(AjaxElementLocator.java:37)
-	at org.openqa.selenium.support.pagefactory.AjaxElementLocator$SlowLoadingElement.isLoaded(AjaxElementLocator.java:122)
-	at org.openqa.selenium.support.ui.SlowLoadableComponent.get(SlowLoadableComponent.java:59)
-	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:67)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
-	at $Proxy7.getText(Unknown Source)
-	at com.qait.cxp.keywords.BSimpleTestActivityKeywords.verifySimpleTestContentPageHeader(BSimpleTestActivityKeywords.java:18)
-	at com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifySimpleTestContentPageHeader(BSimpleTestContentLaunchTest.java:21)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
-	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
-	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connection to http://localhost:7055 refused
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:190)
-	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:151)
-	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:125)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:640)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:479)
-	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
-	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:331)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:310)
-	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:133)
-	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:506)
-	... 48 more
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.TwoStacksPlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
-	at java.net.Socket.connect(Socket.java:579)
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:127)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
-	... 58 more
-... Removed 26 stack frames]]>
-    </failure>
-  </testcase>
-  <testcase name="@AfterClass tearDown" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest">
-    <skipped/>
-  </testcase>
-  <testcase name="verify_Select_Xml_and_Load" time="0.015" classname="com.qait.cxp.maintest.ALaunchActivityPageTest">
-    <failure type="java.lang.NullPointerException">
-      <![CDATA[java.lang.NullPointerException
-	at com.qait.cxp.dataprovider.CxpDataProvider.getXmlFromFile(CxpDataProvider.java:58)
-	at com.qait.cxp.maintest.ALaunchActivityPageTest.fetch_Xml_To_Load(ALaunchActivityPageTest.java:26)
-	at com.qait.cxp.maintest.ALaunchActivityPageTest.verify_Select_Xml_and_Load(ALaunchActivityPageTest.java:31)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
-	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
-	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-... Removed 26 stack frames]]>
-    </failure>
-  </testcase>
-  <testcase name="verify_Take_Assignment" time="0.0" classname="com.qait.cxp.maintest.ALaunchActivityPageTest">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyActivityPageHeader" time="0.078" classname="com.qait.cxp.maintest.ALaunchActivityPageTest"/>
-  <testcase name="verifyClickingOnTryAnotherVersionReloadsFITBItem" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyShowHintButtonIsEnabled" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest">
-    <skipped/>
-  </testcase>
-  <testcase name="verifySubmitAnswerButtonOnFITBItemAfterSubmitIsInactive" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyTryAnotherButtonOnMultipleChoiceItemBeforeSubmitIsInactive" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyTryAnotherButtonOnMultipleChoiceItemAfterSubmitAndReloadIsInactive" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyClickingOnReferencesShowsReferencesPage" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest">
-    <skipped/>
-  </testcase>
-  <testcase name="verifySubmitAnswerButtonOnMultipleChoiceItemBeforeSubmitIsActive" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyNextLinkOnMultipleChoiceItemBeforeSubmitIsActive" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyTryAnotherVersionButtonOnMultipleChoiceItemAfterSubmitIsActive" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest">
-    <skipped/>
-  </testcase>
-  <testcase name="verifySubmittingCorrectAnswerForMultipleChoiceShowsShowsCorrectRejoinder" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyReviewTopicButtonIsEnabled" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyClosingReferencesPage" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest">
-    <skipped/>
-  </testcase>
-  <testcase name="verifySubmitAnswerButtonOnMultipleChoiceAfterSubmitAndReloadIsActive" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest">
-    <skipped/>
-  </testcase>
-  <testcase name="verifySubmitAnswerButtonOnMultipleChoiceItemAfterSubmitReloadAndSubmitIsInactive" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest">
-    <skipped/>
-  </testcase>
-  <testcase name="verifySubmitAnswerButtonOnFITBItemAfterSubmitAndReloadIsActive" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyClickingOnTryAnotherVersionReloadsMultipleChoiceItem" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest">
-    <skipped/>
-  </testcase>
-  <testcase name="verifySubmittingCorrectAnswerForFITBShowsCorrectRejoinder" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyNextLinkOnMultipleChoiceItemAfterSubmitIsActive" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyTryAnotherVersionButtonOnFITBItemAfterSubmitReloadAndSubmitIsActive" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyClickOnHideHint" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyClickOnReviewTopicButton" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyCloseReviewTopics" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyClickOnReferencesButtonShowsReferencesList" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest">
-    <skipped/>
-  </testcase>
-  <testcase name="verifySubmitAnswerButtonOnMultipleChoiceItemAfterSubmitIsInactive" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyTryAnotherVersionButtonOnFITBItemAfterSubmitIsActive" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyClikingOnNextLinkLoadsNextFITBItem" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyReviewTopicsAppear" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest">
-    <skipped/>
-  </testcase>
-  <testcase name="verifySubmittingIncorrectAnswerForMultipleChoiceShowsIncorrectRejoinder" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest">
-    <skipped/>
-  </testcase>
-  <testcase name="verifySubmitAnswerButtonOnFITBItemAfterSubmitReloadAndSubmitIsInactive" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyClickingOnShowHintButtonShowsHint" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyNextLinkOnFITBItemAfterSubmitIsActive" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyMultipleChoiceItemIsLoaded" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyClickingOnReviewTopicShowsReviewTopicPage" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest">
-    <skipped/>
-  </testcase>
-  <testcase name="verifyTryAnotherButtonOnFITBItemAfterSubmitAndReloadIsInactive" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest">
-    <skipped/>
-  </testcase>
+<testsuite hostname="MABOSPKUMAR-L1" name="com.qait.cxp.maintest.ALaunchActivityPageTest" tests="37" failures="0" timestamp="14 Feb 2013 20:08:53 GMT" time="36.766" errors="0">
+  <testcase name="verifyActivityPageHeader" time="0.156" classname="com.qait.cxp.maintest.ALaunchActivityPageTest"/>
+  <testcase name="verify_Select_Xml_and_Load" time="8.437" classname="com.qait.cxp.maintest.ALaunchActivityPageTest"/>
+  <testcase name="verify_Take_Assignment" time="3.719" classname="com.qait.cxp.maintest.ALaunchActivityPageTest"/>
+  <testcase name="verifyClickOnHideHint" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest"/>
+  <testcase name="verifyClickOnReferencesButtonShowsReferencesList" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest"/>
+  <testcase name="verifyClickOnReviewTopicButton" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest"/>
+  <testcase name="verifyClickingOnReferencesShowsReferencesPage" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest"/>
+  <testcase name="verifyClickingOnReviewTopicShowsReviewTopicPage" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest"/>
+  <testcase name="verifyClickingOnShowHintButtonShowsHint" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest"/>
+  <testcase name="verifyClickingOnTryAnotherVersionReloadsFITBItem" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest"/>
+  <testcase name="verifyClickingOnTryAnotherVersionReloadsMultipleChoiceItem" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest"/>
+  <testcase name="verifyClikingOnNextLinkLoadsNextFITBItem" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest"/>
+  <testcase name="verifyCloseReviewTopics" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest"/>
+  <testcase name="verifyClosingReferencesPage" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest"/>
+  <testcase name="verifyMultipleChoiceItemIsLoaded" time="2.39" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest"/>
+  <testcase name="verifyNextLinkOnFITBItemAfterSubmitIsActive" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest"/>
+  <testcase name="verifyNextLinkOnMultipleChoiceItemAfterSubmitIsActive" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest"/>
+  <testcase name="verifyNextLinkOnMultipleChoiceItemBeforeSubmitIsActive" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest"/>
+  <testcase name="verifyReviewTopicButtonIsEnabled" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest"/>
+  <testcase name="verifyReviewTopicsAppear" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest"/>
+  <testcase name="verifyShowHintButtonIsEnabled" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest"/>
+  <testcase name="verifySubmitAnswerButtonOnFITBItemAfterSubmitAndReloadIsActive" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest"/>
+  <testcase name="verifySubmitAnswerButtonOnFITBItemAfterSubmitIsInactive" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest"/>
+  <testcase name="verifySubmitAnswerButtonOnFITBItemAfterSubmitReloadAndSubmitIsInactive" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest"/>
+  <testcase name="verifySubmitAnswerButtonOnMultipleChoiceAfterSubmitAndReloadIsActive" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest"/>
+  <testcase name="verifySubmitAnswerButtonOnMultipleChoiceItemAfterSubmitIsInactive" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest"/>
+  <testcase name="verifySubmitAnswerButtonOnMultipleChoiceItemAfterSubmitReloadAndSubmitIsInactive" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest"/>
+  <testcase name="verifySubmitAnswerButtonOnMultipleChoiceItemBeforeSubmitIsActive" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest"/>
+  <testcase name="verifySubmittingCorrectAnswerForFITBShowsCorrectRejoinder" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest"/>
+  <testcase name="verifySubmittingCorrectAnswerForMultipleChoiceShowsShowsCorrectRejoinder" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest"/>
+  <testcase name="verifySubmittingIncorrectAnswerForMultipleChoiceShowsIncorrectRejoinder" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest"/>
+  <testcase name="verifyTryAnotherButtonOnFITBItemAfterSubmitAndReloadIsInactive" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest"/>
+  <testcase name="verifyTryAnotherButtonOnMultipleChoiceItemAfterSubmitAndReloadIsInactive" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest"/>
+  <testcase name="verifyTryAnotherButtonOnMultipleChoiceItemBeforeSubmitIsInactive" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest"/>
+  <testcase name="verifyTryAnotherVersionButtonOnFITBItemAfterSubmitIsActive" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest"/>
+  <testcase name="verifyTryAnotherVersionButtonOnFITBItemAfterSubmitReloadAndSubmitIsActive" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest"/>
+  <testcase name="verifyTryAnotherVersionButtonOnMultipleChoiceItemAfterSubmitIsActive" time="0.0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest"/>
 </testsuite>

@@ -1,58 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="1" total="3" passed="1">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16578" started-at="2013-02-14T17:25:01Z" finished-at="2013-02-14T17:25:18Z">
+  <suite name="Default suite" duration-ms="26015" started-at="2013-02-14T20:02:22Z" finished-at="2013-02-14T20:02:48Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16578" started-at="2013-02-14T17:25:01Z" finished-at="2013-02-14T17:25:18Z">
+    <test name="Default test" duration-ms="26015" started-at="2013-02-14T20:02:22Z" finished-at="2013-02-14T20:02:48Z">
       <class name="com.qait.cxp.maintest.ALaunchActivityPageTest">
-        <test-method status="PASS" signature="startBrowser()[pri:0, instance:com.qait.cxp.maintest.ALaunchActivityPageTest@74714c]" name="startBrowser" is-config="true" duration-ms="16469" started-at="2013-02-14T12:25:01Z" finished-at="2013-02-14T12:25:18Z">
+        <test-method status="PASS" signature="startBrowser()[pri:0, instance:com.qait.cxp.maintest.ALaunchActivityPageTest@74714c]" name="startBrowser" is-config="true" duration-ms="13531" started-at="2013-02-14T15:02:22Z" finished-at="2013-02-14T15:02:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
-        <test-method status="PASS" signature="verifyActivityPageHeader()[pri:0, instance:com.qait.cxp.maintest.ALaunchActivityPageTest@74714c]" name="verifyActivityPageHeader" duration-ms="78" started-at="2013-02-14T12:25:18Z" finished-at="2013-02-14T12:25:18Z">
+        <test-method status="PASS" signature="verifyActivityPageHeader()[pri:0, instance:com.qait.cxp.maintest.ALaunchActivityPageTest@74714c]" name="verifyActivityPageHeader" duration-ms="94" started-at="2013-02-14T15:02:36Z" finished-at="2013-02-14T15:02:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyActivityPageHeader -->
-        <test-method status="FAIL" signature="verify_Select_Xml_and_Load()[pri:0, instance:com.qait.cxp.maintest.ALaunchActivityPageTest@74714c]" name="verify_Select_Xml_and_Load" duration-ms="0" started-at="2013-02-14T12:25:18Z" finished-at="2013-02-14T12:25:18Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at com.qait.cxp.dataprovider.CxpDataProvider.getXmlFromFile(CxpDataProvider.java:58)
-	at com.qait.cxp.maintest.ALaunchActivityPageTest.fetch_Xml_To_Load(ALaunchActivityPageTest.java:26)
-	at com.qait.cxp.maintest.ALaunchActivityPageTest.verify_Select_Xml_and_Load(ALaunchActivityPageTest.java:31)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
-	at org.testng.TestNG.run(TestNG.java:1030)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method status="PASS" signature="verify_Select_Xml_and_Load()[pri:0, instance:com.qait.cxp.maintest.ALaunchActivityPageTest@74714c]" name="verify_Select_Xml_and_Load" duration-ms="8344" started-at="2013-02-14T15:02:36Z" depends-on-methods="com.qait.cxp.maintest.ALaunchActivityPageTest.verifyActivityPageHeader" finished-at="2013-02-14T15:02:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Select_Xml_and_Load -->
-        <test-method status="SKIP" signature="verify_Take_Assignment()[pri:0, instance:com.qait.cxp.maintest.ALaunchActivityPageTest@74714c]" name="verify_Take_Assignment" duration-ms="0" started-at="2013-02-14T12:25:18Z" depends-on-methods="com.qait.cxp.maintest.ALaunchActivityPageTest.verify_Select_Xml_and_Load" finished-at="2013-02-14T12:25:18Z">
+        <test-method status="PASS" signature="verify_Take_Assignment()[pri:0, instance:com.qait.cxp.maintest.ALaunchActivityPageTest@74714c]" name="verify_Take_Assignment" duration-ms="4031" started-at="2013-02-14T15:02:44Z" depends-on-methods="com.qait.cxp.maintest.ALaunchActivityPageTest.verify_Select_Xml_and_Load" finished-at="2013-02-14T15:02:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Take_Assignment -->

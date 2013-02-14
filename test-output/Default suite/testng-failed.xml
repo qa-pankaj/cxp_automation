@@ -8,6 +8,7 @@
           <include name="verify_Select_Xml_and_Load"/>
           <include name="startBrowser"/>
           <include name="verify_Take_Assignment"/>
+          <include name="verifyActivityPageHeader"/>
         </methods>
       </class> <!-- com.qait.cxp.maintest.ALaunchActivityPageTest -->
     </classes>

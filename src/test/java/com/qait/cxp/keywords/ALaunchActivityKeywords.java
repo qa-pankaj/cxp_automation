@@ -50,7 +50,7 @@ public class ALaunchActivityKeywords extends ALaunchActivityPage{
 		}
 */
 		public void verifySelectXmlandLoad(String fileXml) throws Exception {
-			System.out.println(fileXml);
+			//System.out.println(fileXml);
 			activityXmlTextArea.clear();
 			activityXmlTextArea.sendKeys(fileXml);
 			//activityXmlTextArea.sendKeys(getXmlFromFile(fileXml));

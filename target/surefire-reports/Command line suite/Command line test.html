@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Command line test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/35</td>
+<td>Tests passed/Failed/Skipped:</td><td>37/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Feb 14 12:17:28 EST 2013</td>
+<td>Started on:</td><td>Thu Feb 14 15:08:16 EST 2013</td>
 </tr>
-<tr><td>Total time:</td><td>30 seconds (30171 ms)</td>
+<tr><td>Total time:</td><td>36 seconds (36766 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,227 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifySimpleTestContentPageHeader()'><b>verifySimpleTestContentPageHeader</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
-<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
-System info: os.name: &apos;Windows XP&apos;, os.arch: &apos;x86&apos;, os.version: &apos;5.1&apos;, java.version: &apos;1.7.0_05&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:302)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:379)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:406)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:294)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
-	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.access$001(AjaxElementLocator.java:37)
-	at org.openqa.selenium.support.pagefactory.AjaxElementLocator$SlowLoadingElement.isLoaded(AjaxElementLocator.java:122)
-	at org.openqa.selenium.support.ui.SlowLoadableComponent.get(SlowLoadableComponent.java:59)
-	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:67)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
-	at $Proxy7.getText(Unknown Source)
-	at com.qait.cxp.keywords.BSimpleTestActivityKeywords.verifySimpleTestContentPageHeader(BSimpleTestActivityKeywords.java:18)
-	at com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifySimpleTestContentPageHeader(BSimpleTestContentLaunchTest.java:21)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
-	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
-	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connection to http://localhost:7055 refused
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:190)
-	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:151)
-	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:125)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:640)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:479)
-	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
-	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:331)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:310)
-	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:133)
-	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:506)
-	... 48 more
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.TwoStacksPlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
-	at java.net.Socket.connect(Socket.java:579)
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:127)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
-	... 58 more
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace9005507", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace9005507'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 15:53:30'
-System info: os.name: 'Windows XP', os.arch: 'x86', os.version: '5.1', java.version: '1.7.0_05'
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:302)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:379)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:406)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:294)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
-	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.access$001(AjaxElementLocator.java:37)
-	at org.openqa.selenium.support.pagefactory.AjaxElementLocator$SlowLoadingElement.isLoaded(AjaxElementLocator.java:122)
-	at org.openqa.selenium.support.ui.SlowLoadableComponent.get(SlowLoadableComponent.java:59)
-	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:67)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
-	at $Proxy7.getText(Unknown Source)
-	at com.qait.cxp.keywords.BSimpleTestActivityKeywords.verifySimpleTestContentPageHeader(BSimpleTestActivityKeywords.java:18)
-	at com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifySimpleTestContentPageHeader(BSimpleTestContentLaunchTest.java:21)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:601)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:525)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:202)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:130)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
-	at org.testng.TestRunner.privateRun(TestRunner.java:757)
-	at org.testng.TestRunner.run(TestRunner.java:608)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
-	at org.testng.TestNG.run(TestNG.java:999)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:601)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
-	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
-	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connection to http://localhost:7055 refused
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:190)
-	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:151)
-	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:125)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:640)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:479)
-	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
-	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:331)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:310)
-	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:133)
-	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:506)
-	... 48 more
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.TwoStacksPlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
-	at java.net.Socket.connect(Socket.java:579)
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:127)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
-	... 58 more
-</pre></div></td>
-<td>0</td>
-<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@13a0067</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.tearDown()'><b>tearDown</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
-<td></td>
-<td>0</td>
-<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@13a0067</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.qait.cxp.maintest.ALaunchActivityPageTest.verify_Select_Xml_and_Load()'><b>verify_Select_Xml_and_Load</b><br>Test class: com.qait.cxp.maintest.ALaunchActivityPageTest</td>
-<td><div><pre>java.lang.NullPointerException
-	at com.qait.cxp.dataprovider.CxpDataProvider.getXmlFromFile(CxpDataProvider.java:58)
-	at com.qait.cxp.maintest.ALaunchActivityPageTest.fetch_Xml_To_Load(ALaunchActivityPageTest.java:26)
-	at com.qait.cxp.maintest.ALaunchActivityPageTest.verify_Select_Xml_and_Load(ALaunchActivityPageTest.java:31)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
-	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
-	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace13452655", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace13452655'><pre>java.lang.NullPointerException
-	at com.qait.cxp.dataprovider.CxpDataProvider.getXmlFromFile(CxpDataProvider.java:58)
-	at com.qait.cxp.maintest.ALaunchActivityPageTest.fetch_Xml_To_Load(ALaunchActivityPageTest.java:26)
-	at com.qait.cxp.maintest.ALaunchActivityPageTest.verify_Select_Xml_and_Load(ALaunchActivityPageTest.java:31)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:601)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
-	at org.testng.TestRunner.privateRun(TestRunner.java:757)
-	at org.testng.TestRunner.run(TestRunner.java:608)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
-	at org.testng.TestNG.run(TestNG.java:999)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:601)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
-	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
-	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-</pre></div></td>
-<td>0</td>
-<td>com.qait.cxp.maintest.ALaunchActivityPageTest@1a896a4</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -299,190 +78,187 @@ Caused by: java.net.ConnectException: Connection refused: connect
 <td title='com.qait.cxp.maintest.ALaunchActivityPageTest.verifyActivityPageHeader()'><b>verifyActivityPageHeader</b><br>Test class: com.qait.cxp.maintest.ALaunchActivityPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.qait.cxp.maintest.ALaunchActivityPageTest@1a896a4</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
+<td>com.qait.cxp.maintest.ALaunchActivityPageTest@13a0067</td></tr>
 <tr>
 <td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyClickOnHideHint()'><b>verifyClickOnHideHint</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
 <td></td>
 <td>0</td>
-<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@13a0067</td></tr>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@f0761a</td></tr>
 <tr>
 <td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyClickOnReferencesButtonShowsReferencesList()'><b>verifyClickOnReferencesButtonShowsReferencesList</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
 <td></td>
 <td>0</td>
-<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@13a0067</td></tr>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@f0761a</td></tr>
 <tr>
 <td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyClickOnReviewTopicButton()'><b>verifyClickOnReviewTopicButton</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
 <td></td>
 <td>0</td>
-<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@13a0067</td></tr>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@f0761a</td></tr>
 <tr>
 <td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyClickingOnReferencesShowsReferencesPage()'><b>verifyClickingOnReferencesShowsReferencesPage</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
 <td></td>
 <td>0</td>
-<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@13a0067</td></tr>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@f0761a</td></tr>
 <tr>
 <td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyClickingOnReviewTopicShowsReviewTopicPage()'><b>verifyClickingOnReviewTopicShowsReviewTopicPage</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
 <td></td>
 <td>0</td>
-<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@13a0067</td></tr>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@f0761a</td></tr>
 <tr>
 <td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyClickingOnShowHintButtonShowsHint()'><b>verifyClickingOnShowHintButtonShowsHint</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
 <td></td>
 <td>0</td>
-<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@13a0067</td></tr>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@f0761a</td></tr>
 <tr>
 <td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyClickingOnTryAnotherVersionReloadsFITBItem()'><b>verifyClickingOnTryAnotherVersionReloadsFITBItem</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
 <td></td>
 <td>0</td>
-<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@13a0067</td></tr>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@f0761a</td></tr>
 <tr>
 <td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyClickingOnTryAnotherVersionReloadsMultipleChoiceItem()'><b>verifyClickingOnTryAnotherVersionReloadsMultipleChoiceItem</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
 <td></td>
 <td>0</td>
-<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@13a0067</td></tr>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@f0761a</td></tr>
 <tr>
 <td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyClikingOnNextLinkLoadsNextFITBItem()'><b>verifyClikingOnNextLinkLoadsNextFITBItem</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
 <td></td>
 <td>0</td>
-<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@13a0067</td></tr>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@f0761a</td></tr>
 <tr>
 <td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyCloseReviewTopics()'><b>verifyCloseReviewTopics</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
 <td></td>
 <td>0</td>
-<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@13a0067</td></tr>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@f0761a</td></tr>
 <tr>
 <td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyClosingReferencesPage()'><b>verifyClosingReferencesPage</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
 <td></td>
 <td>0</td>
-<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@13a0067</td></tr>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@f0761a</td></tr>
 <tr>
 <td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyMultipleChoiceItemIsLoaded()'><b>verifyMultipleChoiceItemIsLoaded</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
 <td></td>
-<td>0</td>
-<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@13a0067</td></tr>
+<td>2</td>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@f0761a</td></tr>
 <tr>
 <td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyNextLinkOnFITBItemAfterSubmitIsActive()'><b>verifyNextLinkOnFITBItemAfterSubmitIsActive</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
 <td></td>
 <td>0</td>
-<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@13a0067</td></tr>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@f0761a</td></tr>
 <tr>
 <td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyNextLinkOnMultipleChoiceItemAfterSubmitIsActive()'><b>verifyNextLinkOnMultipleChoiceItemAfterSubmitIsActive</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
 <td></td>
 <td>0</td>
-<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@13a0067</td></tr>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@f0761a</td></tr>
 <tr>
 <td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyNextLinkOnMultipleChoiceItemBeforeSubmitIsActive()'><b>verifyNextLinkOnMultipleChoiceItemBeforeSubmitIsActive</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
 <td></td>
 <td>0</td>
-<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@13a0067</td></tr>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@f0761a</td></tr>
 <tr>
 <td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyReviewTopicButtonIsEnabled()'><b>verifyReviewTopicButtonIsEnabled</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
 <td></td>
 <td>0</td>
-<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@13a0067</td></tr>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@f0761a</td></tr>
 <tr>
 <td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyReviewTopicsAppear()'><b>verifyReviewTopicsAppear</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
 <td></td>
 <td>0</td>
-<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@13a0067</td></tr>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@f0761a</td></tr>
 <tr>
 <td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyShowHintButtonIsEnabled()'><b>verifyShowHintButtonIsEnabled</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
 <td></td>
 <td>0</td>
-<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@13a0067</td></tr>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@f0761a</td></tr>
 <tr>
 <td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifySubmitAnswerButtonOnFITBItemAfterSubmitAndReloadIsActive()'><b>verifySubmitAnswerButtonOnFITBItemAfterSubmitAndReloadIsActive</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
 <td></td>
 <td>0</td>
-<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@13a0067</td></tr>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@f0761a</td></tr>
 <tr>
 <td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifySubmitAnswerButtonOnFITBItemAfterSubmitIsInactive()'><b>verifySubmitAnswerButtonOnFITBItemAfterSubmitIsInactive</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
 <td></td>
 <td>0</td>
-<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@13a0067</td></tr>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@f0761a</td></tr>
 <tr>
 <td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifySubmitAnswerButtonOnFITBItemAfterSubmitReloadAndSubmitIsInactive()'><b>verifySubmitAnswerButtonOnFITBItemAfterSubmitReloadAndSubmitIsInactive</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
 <td></td>
 <td>0</td>
-<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@13a0067</td></tr>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@f0761a</td></tr>
 <tr>
 <td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifySubmitAnswerButtonOnMultipleChoiceAfterSubmitAndReloadIsActive()'><b>verifySubmitAnswerButtonOnMultipleChoiceAfterSubmitAndReloadIsActive</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
 <td></td>
 <td>0</td>
-<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@13a0067</td></tr>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@f0761a</td></tr>
 <tr>
 <td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifySubmitAnswerButtonOnMultipleChoiceItemAfterSubmitIsInactive()'><b>verifySubmitAnswerButtonOnMultipleChoiceItemAfterSubmitIsInactive</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
 <td></td>
 <td>0</td>
-<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@13a0067</td></tr>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@f0761a</td></tr>
 <tr>
 <td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifySubmitAnswerButtonOnMultipleChoiceItemAfterSubmitReloadAndSubmitIsInactive()'><b>verifySubmitAnswerButtonOnMultipleChoiceItemAfterSubmitReloadAndSubmitIsInactive</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
 <td></td>
 <td>0</td>
-<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@13a0067</td></tr>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@f0761a</td></tr>
 <tr>
 <td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifySubmitAnswerButtonOnMultipleChoiceItemBeforeSubmitIsActive()'><b>verifySubmitAnswerButtonOnMultipleChoiceItemBeforeSubmitIsActive</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
 <td></td>
 <td>0</td>
-<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@13a0067</td></tr>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@f0761a</td></tr>
 <tr>
 <td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifySubmittingCorrectAnswerForFITBShowsCorrectRejoinder()'><b>verifySubmittingCorrectAnswerForFITBShowsCorrectRejoinder</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
 <td></td>
 <td>0</td>
-<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@13a0067</td></tr>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@f0761a</td></tr>
 <tr>
 <td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifySubmittingCorrectAnswerForMultipleChoiceShowsShowsCorrectRejoinder()'><b>verifySubmittingCorrectAnswerForMultipleChoiceShowsShowsCorrectRejoinder</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
 <td></td>
 <td>0</td>
-<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@13a0067</td></tr>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@f0761a</td></tr>
 <tr>
 <td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifySubmittingIncorrectAnswerForMultipleChoiceShowsIncorrectRejoinder()'><b>verifySubmittingIncorrectAnswerForMultipleChoiceShowsIncorrectRejoinder</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
 <td></td>
 <td>0</td>
-<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@13a0067</td></tr>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@f0761a</td></tr>
 <tr>
 <td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyTryAnotherButtonOnFITBItemAfterSubmitAndReloadIsInactive()'><b>verifyTryAnotherButtonOnFITBItemAfterSubmitAndReloadIsInactive</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
 <td></td>
 <td>0</td>
-<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@13a0067</td></tr>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@f0761a</td></tr>
 <tr>
 <td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyTryAnotherButtonOnMultipleChoiceItemAfterSubmitAndReloadIsInactive()'><b>verifyTryAnotherButtonOnMultipleChoiceItemAfterSubmitAndReloadIsInactive</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
 <td></td>
 <td>0</td>
-<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@13a0067</td></tr>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@f0761a</td></tr>
 <tr>
 <td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyTryAnotherButtonOnMultipleChoiceItemBeforeSubmitIsInactive()'><b>verifyTryAnotherButtonOnMultipleChoiceItemBeforeSubmitIsInactive</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
 <td></td>
 <td>0</td>
-<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@13a0067</td></tr>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@f0761a</td></tr>
 <tr>
 <td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyTryAnotherVersionButtonOnFITBItemAfterSubmitIsActive()'><b>verifyTryAnotherVersionButtonOnFITBItemAfterSubmitIsActive</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
 <td></td>
 <td>0</td>
-<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@13a0067</td></tr>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@f0761a</td></tr>
 <tr>
 <td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyTryAnotherVersionButtonOnFITBItemAfterSubmitReloadAndSubmitIsActive()'><b>verifyTryAnotherVersionButtonOnFITBItemAfterSubmitReloadAndSubmitIsActive</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
 <td></td>
 <td>0</td>
-<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@13a0067</td></tr>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@f0761a</td></tr>
 <tr>
 <td title='com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyTryAnotherVersionButtonOnMultipleChoiceItemAfterSubmitIsActive()'><b>verifyTryAnotherVersionButtonOnMultipleChoiceItemAfterSubmitIsActive</b><br>Test class: com.qait.cxp.maintest.BSimpleTestContentLaunchTest</td>
 <td></td>
 <td>0</td>
-<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@13a0067</td></tr>
+<td>com.qait.cxp.maintest.BSimpleTestContentLaunchTest@f0761a</td></tr>
+<tr>
+<td title='com.qait.cxp.maintest.ALaunchActivityPageTest.verify_Select_Xml_and_Load()'><b>verify_Select_Xml_and_Load</b><br>Test class: com.qait.cxp.maintest.ALaunchActivityPageTest</td>
+<td></td>
+<td>8</td>
+<td>com.qait.cxp.maintest.ALaunchActivityPageTest@13a0067</td></tr>
 <tr>
 <td title='com.qait.cxp.maintest.ALaunchActivityPageTest.verify_Take_Assignment()'><b>verify_Take_Assignment</b><br>Test class: com.qait.cxp.maintest.ALaunchActivityPageTest</td>
 <td></td>
-<td>0</td>
-<td>null</td></tr>
+<td>3</td>
+<td>com.qait.cxp.maintest.ALaunchActivityPageTest@13a0067</td></tr>
 </table><p>
 </body>
 </html>

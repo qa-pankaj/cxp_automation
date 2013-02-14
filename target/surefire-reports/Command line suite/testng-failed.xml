@@ -3,6 +3,14 @@
 <suite verbose="0" name="Failed suite [Command line suite]">
   <test name="Command line test(failed)" preserve-order="false">
     <classes>
+      <class name="com.qait.cxp.maintest.ALaunchActivityPageTest">
+        <methods>
+          <include name="verify_Select_Xml_and_Load"/>
+          <include name="startBrowser"/>
+          <include name="verify_Take_Assignment"/>
+          <include name="verifyActivityPageHeader"/>
+        </methods>
+      </class>
       <class name="com.qait.cxp.maintest.BSimpleTestContentLaunchTest">
         <methods>
           <include name="verifyClickingOnTryAnotherVersionReloadsFITBItem"/>
@@ -10,13 +18,13 @@
           <include name="verifySimpleTestContentPageHeader"/>
           <include name="verifySubmitAnswerButtonOnFITBItemAfterSubmitIsInactive"/>
           <include name="verifyTryAnotherButtonOnMultipleChoiceItemBeforeSubmitIsInactive"/>
-          <include name="verifyClickingOnReferencesShowsReferencesPage"/>
           <include name="verifyTryAnotherButtonOnMultipleChoiceItemAfterSubmitAndReloadIsInactive"/>
+          <include name="verifyClickingOnReferencesShowsReferencesPage"/>
           <include name="verifySubmitAnswerButtonOnMultipleChoiceItemBeforeSubmitIsActive"/>
           <include name="verifyNextLinkOnMultipleChoiceItemBeforeSubmitIsActive"/>
           <include name="verifyTryAnotherVersionButtonOnMultipleChoiceItemAfterSubmitIsActive"/>
-          <include name="verifyReviewTopicButtonIsEnabled"/>
           <include name="verifySubmittingCorrectAnswerForMultipleChoiceShowsShowsCorrectRejoinder"/>
+          <include name="verifyReviewTopicButtonIsEnabled"/>
           <include name="verifyClosingReferencesPage"/>
           <include name="verifySubmitAnswerButtonOnMultipleChoiceAfterSubmitAndReloadIsActive"/>
           <include name="verifySubmitAnswerButtonOnMultipleChoiceItemAfterSubmitReloadAndSubmitIsInactive"/>
@@ -25,28 +33,21 @@
           <include name="verifySubmittingCorrectAnswerForFITBShowsCorrectRejoinder"/>
           <include name="verifyNextLinkOnMultipleChoiceItemAfterSubmitIsActive"/>
           <include name="verifyTryAnotherVersionButtonOnFITBItemAfterSubmitReloadAndSubmitIsActive"/>
-          <include name="verifyClickOnHideHint"/>
-          <include name="verifyClickOnReviewTopicButton"/>
           <include name="verifyCloseReviewTopics"/>
+          <include name="verifyClickOnReviewTopicButton"/>
+          <include name="verifyClickOnHideHint"/>
           <include name="verifyClickOnReferencesButtonShowsReferencesList"/>
-          <include name="verifySubmitAnswerButtonOnMultipleChoiceItemAfterSubmitIsInactive"/>
           <include name="verifyTryAnotherVersionButtonOnFITBItemAfterSubmitIsActive"/>
+          <include name="verifySubmitAnswerButtonOnMultipleChoiceItemAfterSubmitIsInactive"/>
           <include name="verifyClikingOnNextLinkLoadsNextFITBItem"/>
           <include name="verifyReviewTopicsAppear"/>
           <include name="verifySubmittingIncorrectAnswerForMultipleChoiceShowsIncorrectRejoinder"/>
           <include name="verifySubmitAnswerButtonOnFITBItemAfterSubmitReloadAndSubmitIsInactive"/>
           <include name="verifyClickingOnShowHintButtonShowsHint"/>
           <include name="verifyNextLinkOnFITBItemAfterSubmitIsActive"/>
-          <include name="verifyClickingOnReviewTopicShowsReviewTopicPage"/>
           <include name="verifyMultipleChoiceItemIsLoaded"/>
+          <include name="verifyClickingOnReviewTopicShowsReviewTopicPage"/>
           <include name="verifyTryAnotherButtonOnFITBItemAfterSubmitAndReloadIsInactive"/>
-        </methods>
-      </class>
-      <class name="com.qait.cxp.maintest.ALaunchActivityPageTest">
-        <methods>
-          <include name="verify_Select_Xml_and_Load"/>
-          <include name="startBrowser"/>
-          <include name="verify_Take_Assignment"/>
         </methods>
       </class>
     </classes>

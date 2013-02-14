@@ -26,7 +26,7 @@ public class ALaunchActivityPageTest extends BaseDSLLib {
 		String itemXml=dataProviderObject.getXmlFromFile("roundSF.txt");
 		return itemXml;
 	}
-	@Test
+	@Test (dependsOnMethods={"verifyActivityPageHeader"})
 	public void verify_Select_Xml_and_Load() throws Exception {
 		lnchActPageObject.verifySelectXmlandLoad(fetch_Xml_To_Load());
 	}
