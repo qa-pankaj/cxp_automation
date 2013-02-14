@@ -1,10 +1,11 @@
 package com.qait.cxp.maintest;
 
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import com.qait.cxp.dsl.*;
+import org.testng.annotations.BeforeClass;
 
+//import com.qait.cxp.dataprovider.CxpDataProvider;
+import com.qait.cxp.dataprovider.CxpDataProvider;
+import com.qait.cxp.dsl.*;
 public class ALaunchActivityPageTest extends BaseDSLLib {
 
 	@BeforeClass
@@ -19,17 +20,23 @@ public class ALaunchActivityPageTest extends BaseDSLLib {
 		lnchActPageObject.verifyActivityPageHeader();
 	}
 
+	
+	public String fetch_Xml_To_Load() throws Exception {
+		CxpDataProvider dataProviderObject = new CxpDataProvider();
+		String itemXml=dataProviderObject.getXmlFromFile("roundSF.txt");
+		return itemXml;
+	}
 	@Test
 	public void verify_Select_Xml_and_Load() throws Exception {
+		lnchActPageObject.verifySelectXmlandLoad(fetch_Xml_To_Load());
+	}
+/*	@Test
+	public void verify_Select_Xml_and_Load() throws Exception {
 		lnchActPageObject.verifySelectXmlandLoad();
-	}
+	}*/
 	
-	@Test
+	@Test (dependsOnMethods={"verify_Select_Xml_and_Load"})
 	public void verify_Take_Assignment() throws Exception{
-		lnchActPageObject.clickTackAssignment();
-	}
-	
-	
-
+		lnchActPageObject.clickTakeActivity();}
 
 }

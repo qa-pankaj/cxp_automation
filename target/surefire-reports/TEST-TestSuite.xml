@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="2" time="32.188" errors="0" skipped="36" tests="39" name="TestSuite">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\java\jdk1.7\jre\bin"/>
+    <property name="java.vm.version" value="23.1-b03"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 3"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\cxp_automation\cxp_automation"/>
+    <property name="java.runtime.version" value="1.7.0_05-b05"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\java\jdk1.7\jre\lib\endorsed"/>
+    <property name="os.arch" value="x86"/>
+    <property name="java.io.tmpdir" value="C:\DOCUME~1\pankumar\LOCALS~1\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows XP"/>
+    <property name="classworlds.conf" value="C:\Maven\apache-maven-3.0.4\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\java\jdk1.7\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Diskeeper Corporation\Diskeeper\;C:\Program Files\Common Files\Lenovo;C:\PROGRA~1\IBM\CLIENT~1;C:\PROGRA~1\IBM\CLIENT~1\Shared;C:\PROGRA~1\IBM\CLIENT~1\Emulator;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\ATI Technologies\ATI.ACE\Core-Static;C:\Ruby193\bin;C:\java\jdk1.7\bin;C:\Program Files\Mozilla Firefox\;C:\Program Files\QuickTime Alternative\QTSystem\;C:\Program Files\TortoiseSVN\bin;C:\cxp-asp\chromedriver.exe;C:\Program Files\Git\cmd;C:\Maven\apache-maven-3.0.4\bin;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
+    <property name="os.version" value="5.1"/>
+    <property name="user.home" value="C:\Documents and Settings\pankumar"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="pankumar"/>
+    <property name="java.class.path" value="C:\Maven\apache-maven-3.0.4\bin\..\boot\plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="32"/>
+    <property name="java.home" value="C:\java\jdk1.7\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean integration-test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="1.7.0_05"/>
+    <property name="java.ext.dirs" value="C:\java\jdk1.7\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\java\jdk1.7\jre\lib\resources.jar;C:\java\jdk1.7\jre\lib\rt.jar;C:\java\jdk1.7\jre\lib\sunrsasign.jar;C:\java\jdk1.7\jre\lib\jsse.jar;C:\java\jdk1.7\jre\lib\jce.jar;C:\java\jdk1.7\jre\lib\charsets.jar;C:\java\jdk1.7\jre\lib\jfr.jar;C:\java\jdk1.7\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Maven\apache-maven-3.0.4\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
+  </properties>
+  <testcase time="0.094" classname="com.qait.cxp.maintest.ALaunchActivityPageTest" name="verify_Select_Xml_and_Load">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.qait.cxp.dataprovider.CxpDataProvider.getXmlFromFile(CxpDataProvider.java:58)
+	at com.qait.cxp.maintest.ALaunchActivityPageTest.fetch_Xml_To_Load(ALaunchActivityPageTest.java:26)
+	at com.qait.cxp.maintest.ALaunchActivityPageTest.verify_Select_Xml_and_Load(ALaunchActivityPageTest.java:31)
+</failure>
+    <system-out>Object Initialized
+Object initialized for SimpleTest Page
+In CXP Data Provider Page 
+fileName to be fetched is roundSF.txt
+null
+fetched file name 
+null
+itemXML value is 
+</system-out>
+  </testcase>
+  <testcase time="0.11" classname="com.qait.cxp.maintest.ALaunchActivityPageTest" name="verify_Take_Assignment">
+    <skipped/>
+  </testcase>
+  <testcase time="0.062" classname="com.qait.cxp.maintest.ALaunchActivityPageTest" name="verifyActivityPageHeader"/>
+  <testcase time="12.828" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifySimpleTestContentPageHeader">
+    <failure message="Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
+System info: os.name: &apos;Windows XP&apos;, os.arch: &apos;x86&apos;, os.version: &apos;5.1&apos;, java.version: &apos;1.7.0_05&apos;
+Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.remote.UnreachableBrowserException">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
+System info: os.name: &apos;Windows XP&apos;, os.arch: &apos;x86&apos;, os.version: &apos;5.1&apos;, java.version: &apos;1.7.0_05&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:302)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:379)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:406)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:294)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.access$001(AjaxElementLocator.java:37)
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator$SlowLoadingElement.isLoaded(AjaxElementLocator.java:122)
+	at org.openqa.selenium.support.ui.SlowLoadableComponent.get(SlowLoadableComponent.java:59)
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:67)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
+	at $Proxy7.getText(Unknown Source)
+	at com.qait.cxp.keywords.BSimpleTestActivityKeywords.verifySimpleTestContentPageHeader(BSimpleTestActivityKeywords.java:18)
+	at com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifySimpleTestContentPageHeader(BSimpleTestContentLaunchTest.java:21)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connection to http://localhost:7055 refused
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:190)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:151)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:640)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:479)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:331)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:310)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:133)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:506)
+	... 48 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.TwoStacksPlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:127)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	... 58 more
+</failure>
+    <system-out>check page header method
+</system-out>
+  </testcase>
+  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyClickingOnTryAnotherVersionReloadsFITBItem">
+    <skipped/>
+  </testcase>
+  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyShowHintButtonIsEnabled">
+    <skipped/>
+  </testcase>
+  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifySubmitAnswerButtonOnFITBItemAfterSubmitIsInactive">
+    <skipped/>
+  </testcase>
+  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyTryAnotherButtonOnMultipleChoiceItemBeforeSubmitIsInactive">
+    <skipped/>
+  </testcase>
+  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyTryAnotherButtonOnMultipleChoiceItemAfterSubmitAndReloadIsInactive">
+    <skipped/>
+  </testcase>
+  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyClickingOnReferencesShowsReferencesPage">
+    <skipped/>
+  </testcase>
+  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifySubmitAnswerButtonOnMultipleChoiceItemBeforeSubmitIsActive">
+    <skipped/>
+  </testcase>
+  <testcase time="0.015" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyNextLinkOnMultipleChoiceItemBeforeSubmitIsActive">
+    <skipped/>
+  </testcase>
+  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyTryAnotherVersionButtonOnMultipleChoiceItemAfterSubmitIsActive">
+    <skipped/>
+  </testcase>
+  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifySubmittingCorrectAnswerForMultipleChoiceShowsShowsCorrectRejoinder">
+    <skipped/>
+  </testcase>
+  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyReviewTopicButtonIsEnabled">
+    <skipped/>
+  </testcase>
+  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyClosingReferencesPage">
+    <skipped/>
+  </testcase>
+  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifySubmitAnswerButtonOnMultipleChoiceAfterSubmitAndReloadIsActive">
+    <skipped/>
+  </testcase>
+  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifySubmitAnswerButtonOnMultipleChoiceItemAfterSubmitReloadAndSubmitIsInactive">
+    <skipped/>
+  </testcase>
+  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifySubmitAnswerButtonOnFITBItemAfterSubmitAndReloadIsActive">
+    <skipped/>
+  </testcase>
+  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyClickingOnTryAnotherVersionReloadsMultipleChoiceItem">
+    <skipped/>
+  </testcase>
+  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifySubmittingCorrectAnswerForFITBShowsCorrectRejoinder">
+    <skipped/>
+  </testcase>
+  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyNextLinkOnMultipleChoiceItemAfterSubmitIsActive">
+    <skipped/>
+  </testcase>
+  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyTryAnotherVersionButtonOnFITBItemAfterSubmitReloadAndSubmitIsActive">
+    <skipped/>
+  </testcase>
+  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyClickOnHideHint">
+    <skipped/>
+  </testcase>
+  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyClickOnReviewTopicButton">
+    <skipped/>
+  </testcase>
+  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyCloseReviewTopics">
+    <skipped/>
+  </testcase>
+  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyClickOnReferencesButtonShowsReferencesList">
+    <skipped/>
+  </testcase>
+  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifySubmitAnswerButtonOnMultipleChoiceItemAfterSubmitIsInactive">
+    <skipped/>
+  </testcase>
+  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyTryAnotherVersionButtonOnFITBItemAfterSubmitIsActive">
+    <skipped/>
+  </testcase>
+  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyClikingOnNextLinkLoadsNextFITBItem">
+    <skipped/>
+  </testcase>
+  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyReviewTopicsAppear">
+    <skipped/>
+  </testcase>
+  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifySubmittingIncorrectAnswerForMultipleChoiceShowsIncorrectRejoinder">
+    <skipped/>
+  </testcase>
+  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifySubmitAnswerButtonOnFITBItemAfterSubmitReloadAndSubmitIsInactive">
+    <skipped/>
+  </testcase>
+  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyClickingOnShowHintButtonShowsHint">
+    <skipped/>
+  </testcase>
+  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyNextLinkOnFITBItemAfterSubmitIsActive">
+    <skipped/>
+  </testcase>
+  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyMultipleChoiceItemIsLoaded">
+    <skipped/>
+  </testcase>
+  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyClickingOnReviewTopicShowsReviewTopicPage">
+    <skipped/>
+  </testcase>
+  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyTryAnotherButtonOnFITBItemAfterSubmitAndReloadIsInactive">
+    <skipped/>
+  </testcase>
+  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="tearDown">
+    <skipped/>
+  </testcase>
+</testsuite>

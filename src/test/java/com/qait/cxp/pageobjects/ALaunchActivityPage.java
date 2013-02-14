@@ -23,4 +23,7 @@ public class ALaunchActivityPage extends AbstractPage {
 
 	@FindBy(css="div.submit input")
 	protected WebElement takeactivityButton;
+	
+	@FindBy (name="frame")
+	protected WebElement frameDropDown;
 }
