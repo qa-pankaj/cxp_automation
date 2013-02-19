@@ -1,0 +1,124 @@
+<activity type='cxp:jsp'>
+<handler>chemtest</handler>
+<items>
+<item handler='MC'>
+ <value name="narrative">data:text/xml;charset=UTF-8;base64,PGl0ZW0gaGFuZGxlcj0iTmFycmF0aXZlIj4NCjx2YWx1ZSBuYW1lPSJkaXNwbGF5bmFtZSI+T2ZmaWNpYWwgdGl0bGUgZ29lcyBoZXJlLi4uPC92YWx1ZT4NCjx2YWx1ZSBuYW1lPSJjb250ZW50Ij5IZWxsbywgSSdtIGEgTmFycmF0aXZlITwvdmFsZT4NCjwvaXRlbT4=</value>
+ <value name='question'>2^3 is...  (and by the way, a is <alg>a</alg>)</value>
+ <value name='choice1'>8</value>
+ <value name='choice2'>4</value>
+ <value name='choice3'>2</value>
+ <value name='score1'>1</value>
+ <value name="hints">Sample hint</value>
+ <value name="algorithm">var a = integer(100,999);</value>
+</item>
+<item handler='FITB'>
+<value name='specification'>
+  Question: <field type='text'/>
+</value>
+<value name='correct1'><correct method='equiv'>10</correct></value>
+</item>
+<item handler="Matching">
+  <value name='question'>Question</value>
+  <value name='left1'>left 1</value>
+  <value name='left2'>left 2</value>
+  <value name='left3'>left 3</value>
+  <value name='right1'>right 1</value>
+  <value name='right2'>right 2</value>
+  <value name='right3'>right 3</value>
+  <value name='correctlines'>a1 b2 c3</value>
+</item>
+<item handler='Static'>
+<value name='content'>Content.</value>
+</item>
+<item handler="FITB">
+<value name="specification">
+  MathML entry over MathML:
+
+  <math display="block">
+    <mfrac>
+      <mrow>
+        <field type="mathml"/>
+      </mrow>
+      <mrow>
+        <mn>2</mn><mi>a</mi>
+      </mrow>
+    </mfrac>
+  </math>
+
+  <br/>
+  Chem formula entry over MathML:
+  
+  <math display="block">
+    <mfrac>
+      <mrow>
+        <field type="chem"/>
+      </mrow>
+      <mrow>
+        <mn>3</mn><mi>b</mi>
+      </mrow>
+    </mfrac>
+  </math>
+
+</value>
+<value name="correct1">
+  <correct method="equiv">4</correct>
+</value>
+<value name="correct2">
+  <correct method="chem">H_2_O</correct>
+</value>
+</item>
+<item handler='FITB'>
+<value name='specification'>
+  Draw caffeine:
+  <field type='chem-sketch'/>
+</value>
+<value name='correct1'>
+<correct method='molecule'>
+Molecule Name
+  CHEMDOOD08070920033D 0   0.00000     0.00000     0
+[Insert Comment Here]
+ 14 15  0  0  0  0  0  0  0  0  1 V2000
+   -0.3318    2.0000    0.0000   O 0  0  0  1  0  0  0  0  0  0  0  0
+   -0.3318    1.0000    0.0000   C 0  0  0  1  0  0  0  0  0  0  0  0
+   -1.1980    0.5000    0.0000   N 0  0  0  1  0  0  0  0  0  0  0  0
+    0.5342    0.5000    0.0000   C 0  0  0  1  0  0  0  0  0  0  0  0
+   -1.1980   -0.5000    0.0000   C 0  0  0  1  0  0  0  0  0  0  0  0
+   -2.0640    1.0000    0.0000   C 0  0  0  4  0  0  0  0  0  0  0  0
+    1.4804    0.8047    0.0000   N 0  0  0  1  0  0  0  0  0  0  0  0
+    0.5342   -0.5000    0.0000   C 0  0  0  1  0  0  0  0  0  0  0  0
+   -2.0640   -1.0000    0.0000   O 0  0  0  1  0  0  0  0  0  0  0  0
+   -0.3318   -1.0000    0.0000   N 0  0  0  1  0  0  0  0  0  0  0  0
+    2.0640   -0.0000    0.0000   C 0  0  0  2  0  0  0  0  0  0  0  0
+    1.7910    1.7553    0.0000   C 0  0  0  4  0  0  0  0  0  0  0  0
+    1.4804   -0.8047    0.0000   N 0  0  0  1  0  0  0  0  0  0  0  0
+   -0.3318   -2.0000    0.0000   C 0  0  0  4  0  0  0  0  0  0  0  0
+  1  2  2  0  0  0  0
+  3  2  1  0  0  0  0
+  4  2  1  0  0  0  0
+  3  5  1  0  0  0  0
+  3  6  1  0  0  0  0
+  7  4  1  0  0  0  0
+  4  8  2  0  0  0  0
+  9  5  2  0  0  0  0
+ 10  5  1  0  0  0  0
+ 10  8  1  0  0  0  0
+  7 11  1  0  0  0  0
+  7 12  1  0  0  0  0
+ 13  8  1  0  0  0  0
+ 13 11  2  0  0  0  0
+ 10 14  1  0  0  0  0
+M  END
+&gt; &lt;DATE&gt;
+07-08-2009
+</correct>
+</value></item>
+</items>
+
+<review>
+  <item title='Sample review item' handler='Static'><value name='content'>review content goes here</value></item>
+  <item title='Another review item' handler='Static'><value name='content'>more review content goes here</value></item>
+</review>
+<ebook>
+  <item title='Sample ebook link' handler='Static'><value name='content'>eBook link goes here</value></item>
+</ebook>
+</activity>

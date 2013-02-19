@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26015" started-at="2013-02-14T20:02:22Z" finished-at="2013-02-14T20:02:48Z">
+  <suite name="Default suite" duration-ms="26358" started-at="2013-02-15T18:32:08Z" finished-at="2013-02-15T18:32:35Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="26015" started-at="2013-02-14T20:02:22Z" finished-at="2013-02-14T20:02:48Z">
+    <test name="Default test" duration-ms="26358" started-at="2013-02-15T18:32:08Z" finished-at="2013-02-15T18:32:35Z">
       <class name="com.qait.cxp.maintest.ALaunchActivityPageTest">
-        <test-method status="PASS" signature="startBrowser()[pri:0, instance:com.qait.cxp.maintest.ALaunchActivityPageTest@74714c]" name="startBrowser" is-config="true" duration-ms="13531" started-at="2013-02-14T15:02:22Z" finished-at="2013-02-14T15:02:36Z">
+        <test-method status="PASS" signature="startBrowser()[pri:0, instance:com.qait.cxp.maintest.ALaunchActivityPageTest@567117]" name="startBrowser" is-config="true" duration-ms="13890" started-at="2013-02-15T13:32:08Z" finished-at="2013-02-15T13:32:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
-        <test-method status="PASS" signature="verifyActivityPageHeader()[pri:0, instance:com.qait.cxp.maintest.ALaunchActivityPageTest@74714c]" name="verifyActivityPageHeader" duration-ms="94" started-at="2013-02-14T15:02:36Z" finished-at="2013-02-14T15:02:36Z">
+        <test-method status="PASS" signature="verifyActivityPageHeader()[pri:0, instance:com.qait.cxp.maintest.ALaunchActivityPageTest@567117]" name="verifyActivityPageHeader" duration-ms="188" started-at="2013-02-15T13:32:22Z" finished-at="2013-02-15T13:32:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyActivityPageHeader -->
-        <test-method status="PASS" signature="verify_Select_Xml_and_Load()[pri:0, instance:com.qait.cxp.maintest.ALaunchActivityPageTest@74714c]" name="verify_Select_Xml_and_Load" duration-ms="8344" started-at="2013-02-14T15:02:36Z" depends-on-methods="com.qait.cxp.maintest.ALaunchActivityPageTest.verifyActivityPageHeader" finished-at="2013-02-14T15:02:44Z">
+        <test-method status="PASS" signature="verify_Select_Xml_and_Load()[pri:0, instance:com.qait.cxp.maintest.ALaunchActivityPageTest@567117]" name="verify_Select_Xml_and_Load" duration-ms="8577" started-at="2013-02-15T13:32:23Z" depends-on-methods="com.qait.cxp.maintest.ALaunchActivityPageTest.verifyActivityPageHeader" finished-at="2013-02-15T13:32:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Select_Xml_and_Load -->
-        <test-method status="PASS" signature="verify_Take_Assignment()[pri:0, instance:com.qait.cxp.maintest.ALaunchActivityPageTest@74714c]" name="verify_Take_Assignment" duration-ms="4031" started-at="2013-02-14T15:02:44Z" depends-on-methods="com.qait.cxp.maintest.ALaunchActivityPageTest.verify_Select_Xml_and_Load" finished-at="2013-02-14T15:02:48Z">
+        <test-method status="PASS" signature="verify_Take_Assignment()[pri:0, instance:com.qait.cxp.maintest.ALaunchActivityPageTest@567117]" name="verify_Take_Assignment" duration-ms="3703" started-at="2013-02-15T13:32:31Z" depends-on-methods="com.qait.cxp.maintest.ALaunchActivityPageTest.verify_Select_Xml_and_Load" finished-at="2013-02-15T13:32:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Take_Assignment -->

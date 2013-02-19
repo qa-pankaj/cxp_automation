@@ -13,8 +13,8 @@ public class BSimpleTestActivityKeywords extends BSimpleTestContentLaunchPage{
 
 	}
 	public String verifySimpleTestContentPageHeader() throws Exception {
-		System.out.println("check page header method");
-		Thread.sleep(1000);
+		System.out.println("check page header method for SimpleTest Page");
+		waitForElementToBeVisible(simpleActivityTitle);
 		String str = simpleActivityTitle.getText();
 		System.out.println("Test1 of Simple Page" + str);
 		return str;
@@ -29,7 +29,13 @@ public class BSimpleTestActivityKeywords extends BSimpleTestContentLaunchPage{
 		return str;
 	}
 
-
+	public Boolean verifyReviewTopicButtonIsEnabled () throws Exception{	
+		//driver.switchTo().frame(frameApp);
+		waitForElementToBeVisible(reviewTopicButton);
+		return reviewTopicButton.isEnabled();
+	}
+	
+	
 	public void getScoreButtonTextAndClick(){
 		waitForElementToBeVisible(showScoreButton);
 		System.out.println("Header Text Is:- " + showScoreButton.getText());

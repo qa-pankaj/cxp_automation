@@ -18,7 +18,7 @@ public class ALaunchActivityPage extends AbstractPage {
 	@FindBy(name = "xml")
 	protected WebElement activityXmlTextArea;
 
-	@FindBy(className = "presets")
+	@FindBy(css = "select.presets")
 	protected WebElement presetsDropDown;
 
 	@FindBy(css="div.submit input")

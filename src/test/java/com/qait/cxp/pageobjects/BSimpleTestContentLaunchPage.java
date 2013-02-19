@@ -35,6 +35,14 @@ public class BSimpleTestContentLaunchPage extends AbstractPage {
 
 	@FindBy (css="div.buttton.submit-button.enabled")
 	protected WebElement SubmitAnswerButton;
+	
+	@FindBy (css="div.topbutton.review-topic.enabled")
+	protected WebElement reviewTopicButton;
+	
+	@FindBy (css="a.popupItem")
+	protected WebElement reviewTopicItem;
 
-
+	@FindBy (css="div.ci-question")
+	protected WebElement reviewTopicPopUp;
+	
 }

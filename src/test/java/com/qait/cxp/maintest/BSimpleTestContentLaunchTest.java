@@ -14,23 +14,25 @@ public class BSimpleTestContentLaunchTest extends BaseDSLLib {
 		driver.quit();
 	}
 
-	@BeforeClass
+	
+	@Test (dependsOnGroups = "To_Go_To_Next_Page")
 	public void verifySimpleTestContentPageHeader() throws Exception {
-		String actualResult;
-		String expectedResult = "Activity Service Test Page";
-		actualResult = simpTestPageObject.verifySimpleTestContentPageHeader();
-		Assert.assertTrue(actualResult.contentEquals(expectedResult));
+	String expectedResult = "Activity Service Test Page";
+	String actualResult = simpTestPageObject.verifySimpleTestContentPageHeader();
+	Assert.assertTrue(actualResult.contentEquals(expectedResult));
 	}
-
-	@Test
+	@Test (dependsOnMethods={"verifySimpleTestContentPageHeader"})
 	public void verifyMultipleChoiceItemIsLoaded() throws Exception {
 		String actualResult;
 		String expectedResult = "2^3 is";
 		actualResult = simpTestPageObject.verifyFirstItemIsLoaded();
 		Assert.assertTrue(actualResult.startsWith(expectedResult));
 	}
-	@Test
+	@Test (dependsOnMethods={"verifyMultipleChoiceItemIsLoaded"})
 	public void verifyReviewTopicButtonIsEnabled () throws Exception{	
+		Boolean actualBooleanResult=simpTestPageObject.verifyReviewTopicButtonIsEnabled();
+		Boolean expectedBooleanResult=true;
+		Assert.assertTrue(actualBooleanResult.equals(expectedBooleanResult));
 	}
 	@Test
 	public void verifyClickOnReviewTopicButton () throws Exception {		

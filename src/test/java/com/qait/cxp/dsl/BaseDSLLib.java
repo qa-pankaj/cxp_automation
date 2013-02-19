@@ -16,10 +16,20 @@ public class BaseDSLLib {
 	protected static WebDriver driver;
 	protected static ALaunchActivityKeywords lnchActPageObject;
 	protected static BSimpleTestActivityKeywords simpTestPageObject;
+	
+	
+/*	protected String actualResult;
+	protected String expectedResult;
+	protected Boolean actualBooleanResult;
+	protected Boolean expectedBooleanResult;*/
 
 	public void _initPageObjects() throws Exception {
 		lnchActPageObject = new ALaunchActivityKeywords(driver);
 		simpTestPageObject = new BSimpleTestActivityKeywords(driver);
+/*		actualResult="";
+		expectedResult="";
+		actualBooleanResult=true;
+		expectedBooleanResult = true;*/
 	}
 
 	public void launchBrowser() throws Exception {

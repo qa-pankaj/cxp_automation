@@ -25,19 +25,22 @@ public class CxpDataProvider{
 	}
 	private void resourcepath (String sPath) {
         URL url  = getClass().getClassLoader().getResource(sPath);
-        System.out.println(System.getProperty("java.class.path"));
+        System.out.println(url);
+        //System.out.println(System.getProperty("java.class.path"));
         if (url == null)
             System.out.println("ClassLoader.getResource(" + sPath + "): NULL");
         else
             System.out.println("ClassLoader.getResource(" + sPath + "): SUCCESS");
+       
     }
 	 private void doClassGetResource (String sPath) {
 	        URL url  = getClass().getResource(sPath);
-	        System.out.println(System.getProperty("java.class.path"));
+	        //System.out.println(System.getProperty("java.class.path"));
 	        if (url == null)
 	            System.out.println("Class.getResource(" + sPath + "): NULL");
 	        else
 	            System.out.println("Class.getResource(" + sPath + "): SUCCESS");
+	        System.out.println(url);
 	    }
 
 	public String getXmlFromFile(String fileName) throws Exception{
@@ -49,13 +52,18 @@ public class CxpDataProvider{
 		//System.out.println("file path to e fetched " + getClass());
 		//System.out.println("file path to e fetched " + getClass().getClassLoader().getResourceAsStream(fileName));
 		
-		URL fileURL = getClass().getClassLoader().getResource("testdata/samples/"+fileName);
+		//URL fileURL = getClass().getClassLoader().getResource("testdata/samples/"+fileName);
+		URL fileURL = getClass().getResource("testdata/samples/"+fileName);
+		if (fileURL==null)
+			fileURL=getClass().getClassLoader().getResource("testdata/samples/"+fileName);
+					
+		//URL fileURL = getClass().getClassLoader().getResource(fileName);
 		System.out.println("fetched file name ");
 		System.out.println(fileURL);
 		BufferedReader br = null;
 		String itemXml = "";	
 		System.out.println("itemXML value is " + itemXml);
-		System.out.println(System.getProperty("java.class.path"));
+		//System.out.println(System.getProperty("java.class.path"));
 		try {
 			String sCurrentLine;
 			br = new BufferedReader(new FileReader(new File(fileURL.getFile())));
@@ -85,6 +93,7 @@ public class CxpDataProvider{
 
 
 public static void main (String[] args){
+	//String filePath = "roundSF.txt";
 	String filePath = "testdata/samples/roundSF.txt";
 	CxpDataProvider dataProviderObject = new CxpDataProvider();
 	dataProviderObject.resourcepath(filePath);
