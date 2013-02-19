@@ -1,5 +1,7 @@
 package com.qait.cxp.keywords;
 
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -35,6 +37,27 @@ public class BSimpleTestActivityKeywords extends BSimpleTestContentLaunchPage{
 		return reviewTopicButton.isEnabled();
 	}
 	
+	public Boolean verifyClickingOnReviewTopicButtonShowsReviewTopics () throws Exception {
+	reviewTopicButton.click();
+	waitForElementToBeVisible(reviewTopicItem);
+	return reviewTopicItem.isEnabled();
+	}	
+	
+	public String verifyClickingOnReviewTopicShowsReviewTopicPage () throws Exception{	
+	reviewTopicItem.click();
+	Thread.sleep(300);
+	waitForElementToBeVisible(reviewTopicPopUp);
+	String reviewText = reviewTopicPopUp.getText();
+	System.out.println("reviewtopic text is"+ reviewText);
+	return reviewText;
+	}
+	
+	public Boolean verifyCloseReviewTopics () throws Exception{	
+	closeReviewTopic.click();
+	Thread.sleep(300);
+	waitForElementToBeVisible(reviewTopicItem);
+	return reviewTopicItem.isEnabled();
+	}
 	
 	public void getScoreButtonTextAndClick(){
 		waitForElementToBeVisible(showScoreButton);

@@ -39,10 +39,18 @@ public class BSimpleTestContentLaunchPage extends AbstractPage {
 	@FindBy (css="div.topbutton.review-topic.enabled")
 	protected WebElement reviewTopicButton;
 	
-	@FindBy (css="a.popupItem")
+	@FindBy (css="div.dropdown > div > div.topics > a.popupItem")
+	/*@FindBy (xpath="/html/body/div[3]/div[19]/div/div/a")*/
 	protected WebElement reviewTopicItem;
 
-	@FindBy (css="div.ci-question")
+	//@FindBy (xpath="//div[@className='covalent-item covalent-item-narrative']//div[@className='ci-question']")
+	//@FindBy (xpath="//*[starts-with(@id, 'a')]/div/div")
+	/*	"div#acb61df96048fb0.covalent-item.covalent-item-narrative")
+	\				  a495e9fc006804f
+					  a775f1fb605702a*/
+	@FindBy (xpath="/html/body/div[3]/div[21]/div[2]/div/div/div/div")
 	protected WebElement reviewTopicPopUp;
 	
+	@FindBy (css="div.popupCloseButton")
+	protected WebElement closeReviewTopic;
 }

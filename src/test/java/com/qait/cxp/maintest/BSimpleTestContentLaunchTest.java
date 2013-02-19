@@ -34,17 +34,25 @@ public class BSimpleTestContentLaunchTest extends BaseDSLLib {
 		Boolean expectedBooleanResult=true;
 		Assert.assertTrue(actualBooleanResult.equals(expectedBooleanResult));
 	}
-	@Test
-	public void verifyClickOnReviewTopicButton () throws Exception {		
+	@Test (dependsOnMethods={"verifyReviewTopicButtonIsEnabled"})
+	public void verifyClickingOnReviewTopicButtonShowsReviewTopics () throws Exception {
+		Boolean actualBooleanResult=simpTestPageObject.verifyClickingOnReviewTopicButtonShowsReviewTopics();
+		Boolean expectedBooleanResult=true;
+		Assert.assertTrue(actualBooleanResult.equals(expectedBooleanResult));		
 	}	
-	@Test
-	public void verifyReviewTopicsAppear () throws Exception{	
-	}
-	@Test
+	@Test (dependsOnMethods={"verifyClickingOnReviewTopicButtonShowsReviewTopics"})
 	public void verifyClickingOnReviewTopicShowsReviewTopicPage () throws Exception{	
+		String actualResult;
+		String expectedResult = "Hello, I'm a Narrative!";
+		actualResult = simpTestPageObject.verifyClickingOnReviewTopicShowsReviewTopicPage();
+		Assert.assertTrue(actualResult.equals(expectedResult));	
 	}
-	@Test
+	
+	@Test (dependsOnMethods={"verifyClickingOnReviewTopicShowsReviewTopicPage"})
 	public void verifyCloseReviewTopics () throws Exception{	
+		Boolean actualBooleanResult=simpTestPageObject.verifyCloseReviewTopics();
+		Boolean expectedBooleanResult=true;
+		Assert.assertTrue(actualBooleanResult.equals(expectedBooleanResult));
 	}
 	@Test
 	public void verifyShowHintButtonIsEnabled () throws Exception{	

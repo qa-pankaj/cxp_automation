@@ -1,174 +1,170 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="38" passed="38">
+<testng-results skipped="0" failed="0" total="37" passed="37">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="28899" started-at="2013-02-19T16:29:31Z" finished-at="2013-02-19T16:30:00Z">
+  <suite name="Command line suite" duration-ms="31561" started-at="2013-02-19T21:16:43Z" finished-at="2013-02-19T21:17:15Z">
     <groups>
       <group name="To_Go_To_Next_Page">
         <method signature="ALaunchActivityPageTest.verify_Take_Assignment()[pri:0, instance:com.qait.cxp.maintest.ALaunchActivityPageTest@8c884e]" name="verify_Take_Assignment" class="com.qait.cxp.maintest.ALaunchActivityPageTest"/>
       </group> <!-- To_Go_To_Next_Page -->
     </groups>
-    <test name="Command line test" duration-ms="28899" started-at="2013-02-19T16:29:31Z" finished-at="2013-02-19T16:30:00Z">
+    <test name="Command line test" duration-ms="31561" started-at="2013-02-19T21:16:43Z" finished-at="2013-02-19T21:17:15Z">
       <class name="com.qait.cxp.maintest.ALaunchActivityPageTest">
-        <test-method status="PASS" signature="startBrowser()[pri:0, instance:com.qait.cxp.maintest.ALaunchActivityPageTest@8c884e]" name="startBrowser" is-config="true" duration-ms="12357" started-at="2013-02-19T11:29:31Z" finished-at="2013-02-19T11:29:43Z">
+        <test-method status="PASS" signature="startBrowser()[pri:0, instance:com.qait.cxp.maintest.ALaunchActivityPageTest@8c884e]" name="startBrowser" is-config="true" duration-ms="10968" started-at="2013-02-19T16:16:43Z" finished-at="2013-02-19T16:16:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
-        <test-method status="PASS" signature="verifyActivityPageHeader()[pri:0, instance:com.qait.cxp.maintest.ALaunchActivityPageTest@8c884e]" name="verifyActivityPageHeader" duration-ms="94" started-at="2013-02-19T11:29:43Z" finished-at="2013-02-19T11:29:43Z">
+        <test-method status="PASS" signature="verifyActivityPageHeader()[pri:0, instance:com.qait.cxp.maintest.ALaunchActivityPageTest@8c884e]" name="verifyActivityPageHeader" duration-ms="94" started-at="2013-02-19T16:16:54Z" finished-at="2013-02-19T16:16:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyActivityPageHeader -->
-        <test-method status="PASS" signature="verify_Select_Xml_and_Load()[pri:0, instance:com.qait.cxp.maintest.ALaunchActivityPageTest@8c884e]" name="verify_Select_Xml_and_Load" duration-ms="7717" started-at="2013-02-19T11:29:44Z" depends-on-methods="com.qait.cxp.maintest.ALaunchActivityPageTest.verifyActivityPageHeader" finished-at="2013-02-19T11:29:51Z">
+        <test-method status="PASS" signature="verify_Select_Xml_and_Load()[pri:0, instance:com.qait.cxp.maintest.ALaunchActivityPageTest@8c884e]" name="verify_Select_Xml_and_Load" duration-ms="7266" started-at="2013-02-19T16:16:54Z" depends-on-methods="com.qait.cxp.maintest.ALaunchActivityPageTest.verifyActivityPageHeader" finished-at="2013-02-19T16:17:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Select_Xml_and_Load -->
-        <test-method status="PASS" signature="verify_Take_Assignment()[pri:0, instance:com.qait.cxp.maintest.ALaunchActivityPageTest@8c884e]" name="verify_Take_Assignment" duration-ms="3484" started-at="2013-02-19T11:29:51Z" depends-on-methods="com.qait.cxp.maintest.ALaunchActivityPageTest.verify_Select_Xml_and_Load" finished-at="2013-02-19T11:29:55Z">
+        <test-method status="PASS" signature="verify_Take_Assignment()[pri:0, instance:com.qait.cxp.maintest.ALaunchActivityPageTest@8c884e]" name="verify_Take_Assignment" duration-ms="3343" started-at="2013-02-19T16:17:02Z" depends-on-methods="com.qait.cxp.maintest.ALaunchActivityPageTest.verify_Select_Xml_and_Load" finished-at="2013-02-19T16:17:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Take_Assignment -->
       </class> <!-- com.qait.cxp.maintest.ALaunchActivityPageTest -->
       <class name="com.qait.cxp.maintest.BSimpleTestContentLaunchTest">
-        <test-method status="PASS" signature="verifyClickingOnReviewTopicShowsReviewTopicPage()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyClickingOnReviewTopicShowsReviewTopicPage" duration-ms="0" started-at="2013-02-19T11:29:43Z" finished-at="2013-02-19T11:29:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyClickingOnReviewTopicShowsReviewTopicPage -->
-        <test-method status="PASS" signature="verifyClickOnReviewTopicButton()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyClickOnReviewTopicButton" duration-ms="0" started-at="2013-02-19T11:29:43Z" finished-at="2013-02-19T11:29:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyClickOnReviewTopicButton -->
-        <test-method status="PASS" signature="verifyNextLinkOnMultipleChoiceItemAfterSubmitIsActive()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyNextLinkOnMultipleChoiceItemAfterSubmitIsActive" duration-ms="0" started-at="2013-02-19T11:29:43Z" finished-at="2013-02-19T11:29:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNextLinkOnMultipleChoiceItemAfterSubmitIsActive -->
-        <test-method status="PASS" signature="verifyClickingOnTryAnotherVersionReloadsFITBItem()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyClickingOnTryAnotherVersionReloadsFITBItem" duration-ms="0" started-at="2013-02-19T11:29:43Z" finished-at="2013-02-19T11:29:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyClickingOnTryAnotherVersionReloadsFITBItem -->
-        <test-method status="PASS" signature="verifySubmitAnswerButtonOnMultipleChoiceItemAfterSubmitIsInactive()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifySubmitAnswerButtonOnMultipleChoiceItemAfterSubmitIsInactive" duration-ms="0" started-at="2013-02-19T11:29:43Z" finished-at="2013-02-19T11:29:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySubmitAnswerButtonOnMultipleChoiceItemAfterSubmitIsInactive -->
-        <test-method status="PASS" signature="verifyNextLinkOnMultipleChoiceItemBeforeSubmitIsActive()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyNextLinkOnMultipleChoiceItemBeforeSubmitIsActive" duration-ms="0" started-at="2013-02-19T11:29:43Z" finished-at="2013-02-19T11:29:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNextLinkOnMultipleChoiceItemBeforeSubmitIsActive -->
-        <test-method status="PASS" signature="verifyClickingOnShowHintButtonShowsHint()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyClickingOnShowHintButtonShowsHint" duration-ms="0" started-at="2013-02-19T11:29:43Z" finished-at="2013-02-19T11:29:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyClickingOnShowHintButtonShowsHint -->
-        <test-method status="PASS" signature="verifyClickOnHideHint()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyClickOnHideHint" duration-ms="0" started-at="2013-02-19T11:29:43Z" finished-at="2013-02-19T11:29:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyClickOnHideHint -->
-        <test-method status="PASS" signature="verifyClikingOnNextLinkLoadsNextFITBItem()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyClikingOnNextLinkLoadsNextFITBItem" duration-ms="0" started-at="2013-02-19T11:29:43Z" finished-at="2013-02-19T11:29:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyClikingOnNextLinkLoadsNextFITBItem -->
-        <test-method status="PASS" signature="verifySubmittingCorrectAnswerForMultipleChoiceShowsShowsCorrectRejoinder()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifySubmittingCorrectAnswerForMultipleChoiceShowsShowsCorrectRejoinder" duration-ms="0" started-at="2013-02-19T11:29:43Z" finished-at="2013-02-19T11:29:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySubmittingCorrectAnswerForMultipleChoiceShowsShowsCorrectRejoinder -->
-        <test-method status="PASS" signature="verifySubmitAnswerButtonOnFITBItemAfterSubmitReloadAndSubmitIsInactive()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifySubmitAnswerButtonOnFITBItemAfterSubmitReloadAndSubmitIsInactive" duration-ms="0" started-at="2013-02-19T11:29:43Z" finished-at="2013-02-19T11:29:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySubmitAnswerButtonOnFITBItemAfterSubmitReloadAndSubmitIsInactive -->
-        <test-method status="PASS" signature="verifyCloseReviewTopics()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyCloseReviewTopics" duration-ms="0" started-at="2013-02-19T11:29:43Z" finished-at="2013-02-19T11:29:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCloseReviewTopics -->
-        <test-method status="PASS" signature="verifyReviewTopicsAppear()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyReviewTopicsAppear" duration-ms="0" started-at="2013-02-19T11:29:43Z" finished-at="2013-02-19T11:29:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyReviewTopicsAppear -->
-        <test-method status="PASS" signature="verifyClickingOnReferencesShowsReferencesPage()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyClickingOnReferencesShowsReferencesPage" duration-ms="0" started-at="2013-02-19T11:29:43Z" finished-at="2013-02-19T11:29:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyClickingOnReferencesShowsReferencesPage -->
-        <test-method status="PASS" signature="verifyTryAnotherButtonOnFITBItemAfterSubmitAndReloadIsInactive()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyTryAnotherButtonOnFITBItemAfterSubmitAndReloadIsInactive" duration-ms="0" started-at="2013-02-19T11:29:43Z" finished-at="2013-02-19T11:29:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTryAnotherButtonOnFITBItemAfterSubmitAndReloadIsInactive -->
-        <test-method status="PASS" signature="verifySubmittingCorrectAnswerForFITBShowsCorrectRejoinder()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifySubmittingCorrectAnswerForFITBShowsCorrectRejoinder" duration-ms="0" started-at="2013-02-19T11:29:43Z" finished-at="2013-02-19T11:29:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySubmittingCorrectAnswerForFITBShowsCorrectRejoinder -->
-        <test-method status="PASS" signature="verifySubmitAnswerButtonOnMultipleChoiceItemAfterSubmitReloadAndSubmitIsInactive()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifySubmitAnswerButtonOnMultipleChoiceItemAfterSubmitReloadAndSubmitIsInactive" duration-ms="0" started-at="2013-02-19T11:29:43Z" finished-at="2013-02-19T11:29:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySubmitAnswerButtonOnMultipleChoiceItemAfterSubmitReloadAndSubmitIsInactive -->
-        <test-method status="PASS" signature="verifyNextLinkOnFITBItemAfterSubmitIsActive()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyNextLinkOnFITBItemAfterSubmitIsActive" duration-ms="0" started-at="2013-02-19T11:29:43Z" finished-at="2013-02-19T11:29:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNextLinkOnFITBItemAfterSubmitIsActive -->
-        <test-method status="PASS" signature="verifySubmitAnswerButtonOnMultipleChoiceItemBeforeSubmitIsActive()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifySubmitAnswerButtonOnMultipleChoiceItemBeforeSubmitIsActive" duration-ms="0" started-at="2013-02-19T11:29:43Z" finished-at="2013-02-19T11:29:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySubmitAnswerButtonOnMultipleChoiceItemBeforeSubmitIsActive -->
-        <test-method status="PASS" signature="verifyClickingOnTryAnotherVersionReloadsMultipleChoiceItem()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyClickingOnTryAnotherVersionReloadsMultipleChoiceItem" duration-ms="0" started-at="2013-02-19T11:29:43Z" finished-at="2013-02-19T11:29:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyClickingOnTryAnotherVersionReloadsMultipleChoiceItem -->
-        <test-method status="PASS" signature="verifyClosingReferencesPage()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyClosingReferencesPage" duration-ms="0" started-at="2013-02-19T11:29:43Z" finished-at="2013-02-19T11:29:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyClosingReferencesPage -->
-        <test-method status="PASS" signature="verifySubmitAnswerButtonOnMultipleChoiceAfterSubmitAndReloadIsActive()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifySubmitAnswerButtonOnMultipleChoiceAfterSubmitAndReloadIsActive" duration-ms="0" started-at="2013-02-19T11:29:43Z" finished-at="2013-02-19T11:29:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySubmitAnswerButtonOnMultipleChoiceAfterSubmitAndReloadIsActive -->
-        <test-method status="PASS" signature="verifySubmittingIncorrectAnswerForMultipleChoiceShowsIncorrectRejoinder()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifySubmittingIncorrectAnswerForMultipleChoiceShowsIncorrectRejoinder" duration-ms="0" started-at="2013-02-19T11:29:43Z" finished-at="2013-02-19T11:29:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySubmittingIncorrectAnswerForMultipleChoiceShowsIncorrectRejoinder -->
-        <test-method status="PASS" signature="verifyShowHintButtonIsEnabled()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyShowHintButtonIsEnabled" duration-ms="0" started-at="2013-02-19T11:29:43Z" finished-at="2013-02-19T11:29:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyShowHintButtonIsEnabled -->
-        <test-method status="PASS" signature="verifySubmitAnswerButtonOnFITBItemAfterSubmitAndReloadIsActive()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifySubmitAnswerButtonOnFITBItemAfterSubmitAndReloadIsActive" duration-ms="0" started-at="2013-02-19T11:29:43Z" finished-at="2013-02-19T11:29:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySubmitAnswerButtonOnFITBItemAfterSubmitAndReloadIsActive -->
-        <test-method status="PASS" signature="verifyClickOnReferencesButtonShowsReferencesList()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyClickOnReferencesButtonShowsReferencesList" duration-ms="0" started-at="2013-02-19T11:29:43Z" finished-at="2013-02-19T11:29:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyClickOnReferencesButtonShowsReferencesList -->
-        <test-method status="PASS" signature="verifySubmitAnswerButtonOnFITBItemAfterSubmitIsInactive()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifySubmitAnswerButtonOnFITBItemAfterSubmitIsInactive" duration-ms="0" started-at="2013-02-19T11:29:43Z" finished-at="2013-02-19T11:29:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySubmitAnswerButtonOnFITBItemAfterSubmitIsInactive -->
-        <test-method status="PASS" signature="verifyTryAnotherVersionButtonOnMultipleChoiceItemAfterSubmitIsActive()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyTryAnotherVersionButtonOnMultipleChoiceItemAfterSubmitIsActive" duration-ms="0" started-at="2013-02-19T11:29:44Z" finished-at="2013-02-19T11:29:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTryAnotherVersionButtonOnMultipleChoiceItemAfterSubmitIsActive -->
-        <test-method status="PASS" signature="verifyTryAnotherVersionButtonOnFITBItemAfterSubmitIsActive()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyTryAnotherVersionButtonOnFITBItemAfterSubmitIsActive" duration-ms="0" started-at="2013-02-19T11:29:44Z" finished-at="2013-02-19T11:29:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTryAnotherVersionButtonOnFITBItemAfterSubmitIsActive -->
-        <test-method status="PASS" signature="verifyTryAnotherButtonOnMultipleChoiceItemBeforeSubmitIsInactive()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyTryAnotherButtonOnMultipleChoiceItemBeforeSubmitIsInactive" duration-ms="0" started-at="2013-02-19T11:29:44Z" finished-at="2013-02-19T11:29:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTryAnotherButtonOnMultipleChoiceItemBeforeSubmitIsInactive -->
-        <test-method status="PASS" signature="verifyTryAnotherButtonOnMultipleChoiceItemAfterSubmitAndReloadIsInactive()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyTryAnotherButtonOnMultipleChoiceItemAfterSubmitAndReloadIsInactive" duration-ms="0" started-at="2013-02-19T11:29:44Z" finished-at="2013-02-19T11:29:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTryAnotherButtonOnMultipleChoiceItemAfterSubmitAndReloadIsInactive -->
-        <test-method status="PASS" signature="verifyTryAnotherVersionButtonOnFITBItemAfterSubmitReloadAndSubmitIsActive()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyTryAnotherVersionButtonOnFITBItemAfterSubmitReloadAndSubmitIsActive" duration-ms="0" started-at="2013-02-19T11:29:44Z" finished-at="2013-02-19T11:29:44Z">
+        <test-method status="PASS" signature="verifyTryAnotherVersionButtonOnFITBItemAfterSubmitReloadAndSubmitIsActive()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyTryAnotherVersionButtonOnFITBItemAfterSubmitReloadAndSubmitIsActive" duration-ms="0" started-at="2013-02-19T16:16:54Z" finished-at="2013-02-19T16:16:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTryAnotherVersionButtonOnFITBItemAfterSubmitReloadAndSubmitIsActive -->
-        <test-method status="PASS" signature="verifySimpleTestContentPageHeader()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifySimpleTestContentPageHeader" duration-ms="1171" depends-on-groups="To_Go_To_Next_Page" started-at="2013-02-19T11:29:55Z" finished-at="2013-02-19T11:29:56Z">
+        <test-method status="PASS" signature="verifyTryAnotherButtonOnMultipleChoiceItemBeforeSubmitIsInactive()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyTryAnotherButtonOnMultipleChoiceItemBeforeSubmitIsInactive" duration-ms="0" started-at="2013-02-19T16:16:54Z" finished-at="2013-02-19T16:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTryAnotherButtonOnMultipleChoiceItemBeforeSubmitIsInactive -->
+        <test-method status="PASS" signature="verifyNextLinkOnMultipleChoiceItemAfterSubmitIsActive()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyNextLinkOnMultipleChoiceItemAfterSubmitIsActive" duration-ms="0" started-at="2013-02-19T16:16:54Z" finished-at="2013-02-19T16:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNextLinkOnMultipleChoiceItemAfterSubmitIsActive -->
+        <test-method status="PASS" signature="verifySubmitAnswerButtonOnFITBItemAfterSubmitAndReloadIsActive()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifySubmitAnswerButtonOnFITBItemAfterSubmitAndReloadIsActive" duration-ms="0" started-at="2013-02-19T16:16:54Z" finished-at="2013-02-19T16:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySubmitAnswerButtonOnFITBItemAfterSubmitAndReloadIsActive -->
+        <test-method status="PASS" signature="verifyTryAnotherVersionButtonOnMultipleChoiceItemAfterSubmitIsActive()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyTryAnotherVersionButtonOnMultipleChoiceItemAfterSubmitIsActive" duration-ms="0" started-at="2013-02-19T16:16:54Z" finished-at="2013-02-19T16:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTryAnotherVersionButtonOnMultipleChoiceItemAfterSubmitIsActive -->
+        <test-method status="PASS" signature="verifyClickingOnTryAnotherVersionReloadsFITBItem()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyClickingOnTryAnotherVersionReloadsFITBItem" duration-ms="0" started-at="2013-02-19T16:16:54Z" finished-at="2013-02-19T16:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickingOnTryAnotherVersionReloadsFITBItem -->
+        <test-method status="PASS" signature="verifySubmitAnswerButtonOnFITBItemAfterSubmitReloadAndSubmitIsInactive()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifySubmitAnswerButtonOnFITBItemAfterSubmitReloadAndSubmitIsInactive" duration-ms="0" started-at="2013-02-19T16:16:54Z" finished-at="2013-02-19T16:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySubmitAnswerButtonOnFITBItemAfterSubmitReloadAndSubmitIsInactive -->
+        <test-method status="PASS" signature="verifyNextLinkOnMultipleChoiceItemBeforeSubmitIsActive()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyNextLinkOnMultipleChoiceItemBeforeSubmitIsActive" duration-ms="0" started-at="2013-02-19T16:16:54Z" finished-at="2013-02-19T16:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNextLinkOnMultipleChoiceItemBeforeSubmitIsActive -->
+        <test-method status="PASS" signature="verifyClickingOnTryAnotherVersionReloadsMultipleChoiceItem()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyClickingOnTryAnotherVersionReloadsMultipleChoiceItem" duration-ms="0" started-at="2013-02-19T16:16:54Z" finished-at="2013-02-19T16:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickingOnTryAnotherVersionReloadsMultipleChoiceItem -->
+        <test-method status="PASS" signature="verifyClickOnHideHint()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyClickOnHideHint" duration-ms="15" started-at="2013-02-19T16:16:54Z" finished-at="2013-02-19T16:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickOnHideHint -->
+        <test-method status="PASS" signature="verifyTryAnotherButtonOnFITBItemAfterSubmitAndReloadIsInactive()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyTryAnotherButtonOnFITBItemAfterSubmitAndReloadIsInactive" duration-ms="0" started-at="2013-02-19T16:16:54Z" finished-at="2013-02-19T16:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTryAnotherButtonOnFITBItemAfterSubmitAndReloadIsInactive -->
+        <test-method status="PASS" signature="verifyTryAnotherButtonOnMultipleChoiceItemAfterSubmitAndReloadIsInactive()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyTryAnotherButtonOnMultipleChoiceItemAfterSubmitAndReloadIsInactive" duration-ms="0" started-at="2013-02-19T16:16:54Z" finished-at="2013-02-19T16:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTryAnotherButtonOnMultipleChoiceItemAfterSubmitAndReloadIsInactive -->
+        <test-method status="PASS" signature="verifySubmitAnswerButtonOnFITBItemAfterSubmitIsInactive()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifySubmitAnswerButtonOnFITBItemAfterSubmitIsInactive" duration-ms="0" started-at="2013-02-19T16:16:54Z" finished-at="2013-02-19T16:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySubmitAnswerButtonOnFITBItemAfterSubmitIsInactive -->
+        <test-method status="PASS" signature="verifySubmitAnswerButtonOnMultipleChoiceItemAfterSubmitReloadAndSubmitIsInactive()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifySubmitAnswerButtonOnMultipleChoiceItemAfterSubmitReloadAndSubmitIsInactive" duration-ms="0" started-at="2013-02-19T16:16:54Z" finished-at="2013-02-19T16:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySubmitAnswerButtonOnMultipleChoiceItemAfterSubmitReloadAndSubmitIsInactive -->
+        <test-method status="PASS" signature="verifyShowHintButtonIsEnabled()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyShowHintButtonIsEnabled" duration-ms="0" started-at="2013-02-19T16:16:54Z" finished-at="2013-02-19T16:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyShowHintButtonIsEnabled -->
+        <test-method status="PASS" signature="verifySubmittingCorrectAnswerForFITBShowsCorrectRejoinder()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifySubmittingCorrectAnswerForFITBShowsCorrectRejoinder" duration-ms="0" started-at="2013-02-19T16:16:54Z" finished-at="2013-02-19T16:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySubmittingCorrectAnswerForFITBShowsCorrectRejoinder -->
+        <test-method status="PASS" signature="verifyClickingOnReferencesShowsReferencesPage()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyClickingOnReferencesShowsReferencesPage" duration-ms="0" started-at="2013-02-19T16:16:54Z" finished-at="2013-02-19T16:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickingOnReferencesShowsReferencesPage -->
+        <test-method status="PASS" signature="verifyClickingOnShowHintButtonShowsHint()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyClickingOnShowHintButtonShowsHint" duration-ms="0" started-at="2013-02-19T16:16:54Z" finished-at="2013-02-19T16:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickingOnShowHintButtonShowsHint -->
+        <test-method status="PASS" signature="verifyClickOnReferencesButtonShowsReferencesList()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyClickOnReferencesButtonShowsReferencesList" duration-ms="0" started-at="2013-02-19T16:16:54Z" finished-at="2013-02-19T16:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickOnReferencesButtonShowsReferencesList -->
+        <test-method status="PASS" signature="verifyClosingReferencesPage()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyClosingReferencesPage" duration-ms="0" started-at="2013-02-19T16:16:54Z" finished-at="2013-02-19T16:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClosingReferencesPage -->
+        <test-method status="PASS" signature="verifySubmitAnswerButtonOnMultipleChoiceItemBeforeSubmitIsActive()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifySubmitAnswerButtonOnMultipleChoiceItemBeforeSubmitIsActive" duration-ms="0" started-at="2013-02-19T16:16:54Z" finished-at="2013-02-19T16:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySubmitAnswerButtonOnMultipleChoiceItemBeforeSubmitIsActive -->
+        <test-method status="PASS" signature="verifySubmitAnswerButtonOnMultipleChoiceItemAfterSubmitIsInactive()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifySubmitAnswerButtonOnMultipleChoiceItemAfterSubmitIsInactive" duration-ms="0" started-at="2013-02-19T16:16:54Z" finished-at="2013-02-19T16:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySubmitAnswerButtonOnMultipleChoiceItemAfterSubmitIsInactive -->
+        <test-method status="PASS" signature="verifyClikingOnNextLinkLoadsNextFITBItem()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyClikingOnNextLinkLoadsNextFITBItem" duration-ms="0" started-at="2013-02-19T16:16:54Z" finished-at="2013-02-19T16:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClikingOnNextLinkLoadsNextFITBItem -->
+        <test-method status="PASS" signature="verifyNextLinkOnFITBItemAfterSubmitIsActive()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyNextLinkOnFITBItemAfterSubmitIsActive" duration-ms="0" started-at="2013-02-19T16:16:54Z" finished-at="2013-02-19T16:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNextLinkOnFITBItemAfterSubmitIsActive -->
+        <test-method status="PASS" signature="verifySubmittingCorrectAnswerForMultipleChoiceShowsShowsCorrectRejoinder()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifySubmittingCorrectAnswerForMultipleChoiceShowsShowsCorrectRejoinder" duration-ms="0" started-at="2013-02-19T16:16:54Z" finished-at="2013-02-19T16:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySubmittingCorrectAnswerForMultipleChoiceShowsShowsCorrectRejoinder -->
+        <test-method status="PASS" signature="verifyTryAnotherVersionButtonOnFITBItemAfterSubmitIsActive()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyTryAnotherVersionButtonOnFITBItemAfterSubmitIsActive" duration-ms="0" started-at="2013-02-19T16:16:54Z" finished-at="2013-02-19T16:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTryAnotherVersionButtonOnFITBItemAfterSubmitIsActive -->
+        <test-method status="PASS" signature="verifySubmittingIncorrectAnswerForMultipleChoiceShowsIncorrectRejoinder()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifySubmittingIncorrectAnswerForMultipleChoiceShowsIncorrectRejoinder" duration-ms="0" started-at="2013-02-19T16:16:54Z" finished-at="2013-02-19T16:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySubmittingIncorrectAnswerForMultipleChoiceShowsIncorrectRejoinder -->
+        <test-method status="PASS" signature="verifySubmitAnswerButtonOnMultipleChoiceAfterSubmitAndReloadIsActive()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifySubmitAnswerButtonOnMultipleChoiceAfterSubmitAndReloadIsActive" duration-ms="0" started-at="2013-02-19T16:16:54Z" finished-at="2013-02-19T16:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySubmitAnswerButtonOnMultipleChoiceAfterSubmitAndReloadIsActive -->
+        <test-method status="PASS" signature="verifySimpleTestContentPageHeader()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifySimpleTestContentPageHeader" duration-ms="1156" depends-on-groups="To_Go_To_Next_Page" started-at="2013-02-19T16:17:05Z" finished-at="2013-02-19T16:17:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySimpleTestContentPageHeader -->
-        <test-method status="PASS" signature="verifyMultipleChoiceItemIsLoaded()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyMultipleChoiceItemIsLoaded" duration-ms="2344" started-at="2013-02-19T11:29:56Z" depends-on-methods="com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifySimpleTestContentPageHeader" finished-at="2013-02-19T11:29:58Z">
+        <test-method status="PASS" signature="verifyMultipleChoiceItemIsLoaded()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyMultipleChoiceItemIsLoaded" duration-ms="2344" started-at="2013-02-19T16:17:06Z" depends-on-methods="com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifySimpleTestContentPageHeader" finished-at="2013-02-19T16:17:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyMultipleChoiceItemIsLoaded -->
-        <test-method status="PASS" signature="verifyReviewTopicButtonIsEnabled()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyReviewTopicButtonIsEnabled" duration-ms="1156" started-at="2013-02-19T11:29:58Z" depends-on-methods="com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyMultipleChoiceItemIsLoaded" finished-at="2013-02-19T11:29:59Z">
+        <test-method status="PASS" signature="verifyReviewTopicButtonIsEnabled()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyReviewTopicButtonIsEnabled" duration-ms="1156" started-at="2013-02-19T16:17:09Z" depends-on-methods="com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyMultipleChoiceItemIsLoaded" finished-at="2013-02-19T16:17:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyReviewTopicButtonIsEnabled -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="tearDown" is-config="true" duration-ms="546" started-at="2013-02-19T11:29:59Z" finished-at="2013-02-19T11:30:00Z">
+        <test-method status="PASS" signature="verifyClickingOnReviewTopicButtonShowsReviewTopics()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyClickingOnReviewTopicButtonShowsReviewTopics" duration-ms="1344" started-at="2013-02-19T16:17:10Z" depends-on-methods="com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyReviewTopicButtonIsEnabled" finished-at="2013-02-19T16:17:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickingOnReviewTopicButtonShowsReviewTopics -->
+        <test-method status="PASS" signature="verifyClickingOnReviewTopicShowsReviewTopicPage()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyClickingOnReviewTopicShowsReviewTopicPage" duration-ms="1703" started-at="2013-02-19T16:17:11Z" depends-on-methods="com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyClickingOnReviewTopicButtonShowsReviewTopics" finished-at="2013-02-19T16:17:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickingOnReviewTopicShowsReviewTopicPage -->
+        <test-method status="PASS" signature="verifyCloseReviewTopics()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="verifyCloseReviewTopics" duration-ms="1656" started-at="2013-02-19T16:17:13Z" depends-on-methods="com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifyClickingOnReviewTopicShowsReviewTopicPage" finished-at="2013-02-19T16:17:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCloseReviewTopics -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qait.cxp.maintest.BSimpleTestContentLaunchTest@1b56bda]" name="tearDown" is-config="true" duration-ms="500" started-at="2013-02-19T16:17:14Z" finished-at="2013-02-19T16:17:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
