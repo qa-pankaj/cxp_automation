@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.qait.cxp.maintest.ALaunchActivityPageTest">
+        <methods>
+          <include name="verify_Select_Xml_and_Load"/>
+          <include name="startBrowser"/>
+          <include name="verify_Take_Assignment"/>
+          <include name="verifyActivityPageHeader"/>
+        </methods>
+      </class> <!-- com.qait.cxp.maintest.ALaunchActivityPageTest -->
+      <class name="com.qait.cxp.maintest.BSimpleTestContentLaunchTest">
+        <methods>
+          <include name="verifyClickingOnHideHintClosesHint"/>
+          <include name="verifyShowHintButtonIsEnabled"/>
+          <include name="verifySimpleTestContentPageHeader"/>
+          <include name="verifyShowScoresButtonIsActive"/>
+          <include name="tearDown"/>
+          <include name="verifyShowHintIsChangedToHideHint"/>
+          <include name="verifyCloseReviewTopics"/>
+          <include name="verifyNewTestButtonIsActive"/>
+          <include name="verifyTryAnotherButtonOnMultipleChoiceItemBeforeSubmitIsInactive"/>
+          <include name="verifyClickingOnReferencesShowsReferencesPage"/>
+          <include name="verifySubmitAnswerButtonOnMultipleChoiceItemBeforeSubmitIsActive"/>
+          <include name="verifyClickOnReferencesButtonShowsReferencesList"/>
+          <include name="verifyClickingOnReviewTopicButtonShowsReviewTopics"/>
+          <include name="verifySubmittingIncorrectAnswerForMultipleChoiceShowsIncorrectRejoinder"/>
+          <include name="verifyReviewButtonIsActive"/>
+          <include name="verifyReviewTopicButtonIsEnabled"/>
+          <include name="verifyClickingOnShowHintButtonShowsHint"/>
+          <include name="verifyPrevLinkOnMultipleChoiceFirstItemIsNotPresent"/>
+          <include name="verifyReferencesButtonIsEnabled"/>
+          <include name="verifyNextLinkOnMultipleChoiceFirstItemIsActive"/>
+          <include name="verifyMultipleChoiceItemIsLoaded"/>
+          <include name="verifyClickingOnReviewTopicShowsReviewTopicPage"/>
+        </methods>
+      </class> <!-- com.qait.cxp.maintest.BSimpleTestContentLaunchTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

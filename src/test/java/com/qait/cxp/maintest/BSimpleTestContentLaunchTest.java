@@ -17,84 +17,154 @@ public class BSimpleTestContentLaunchTest extends BaseDSLLib {
 	
 	@Test (dependsOnGroups = "To_Go_To_Next_Page")
 	public void verifySimpleTestContentPageHeader() throws Exception {
-	String expectedResult = "Activity Service Test Page";
-	String actualResult = simpTestPageObject.verifySimpleTestContentPageHeader();
+	expectedResult = "Activity Service Test Page";
+	actualResult = simpTestPageObject.verifySimpleTestContentPageHeader();
 	Assert.assertTrue(actualResult.contentEquals(expectedResult));
 	}
-	@Test (dependsOnMethods={"verifySimpleTestContentPageHeader"})
+	
+	@Test (dependsOnMethods = {"verifySimpleTestContentPageHeader"})
+	public void verifyShowScoresButtonIsActive() throws Exception {
+		actualBooleanResult=simpTestPageObject.verifyShowScoresButtonIsActive();
+		Assert.assertTrue(actualBooleanResult);
+	}
+	
+	@Test (dependsOnMethods = {"verifyShowScoresButtonIsActive"})
+	public void verifyReviewButtonIsActive() throws Exception {
+		actualBooleanResult=simpTestPageObject.verifyReviewButtonIsActive();
+		Assert.assertTrue(actualBooleanResult);
+	}
+	
+	@Test (dependsOnMethods = {"verifyReviewButtonIsActive"})
+	public void verifyNewTestButtonIsActive() throws Exception {
+		actualBooleanResult=simpTestPageObject.verifyNewTestButtonIsActive();
+		Assert.assertTrue(actualBooleanResult);
+	}
+	
+	
+	@Test (dependsOnMethods={"verifyNewTestButtonIsActive"})
 	public void verifyMultipleChoiceItemIsLoaded() throws Exception {
-		String actualResult;
-		String expectedResult = "2^3 is";
+		expectedResult = "2^3 is";
 		actualResult = simpTestPageObject.verifyFirstItemIsLoaded();
 		Assert.assertTrue(actualResult.startsWith(expectedResult));
 	}
 	@Test (dependsOnMethods={"verifyMultipleChoiceItemIsLoaded"})
 	public void verifyReviewTopicButtonIsEnabled () throws Exception{	
-		Boolean actualBooleanResult=simpTestPageObject.verifyReviewTopicButtonIsEnabled();
-		Boolean expectedBooleanResult=true;
+		actualBooleanResult=simpTestPageObject.verifyReviewTopicButtonIsEnabled();
+		expectedBooleanResult=true;
 		Assert.assertTrue(actualBooleanResult.equals(expectedBooleanResult));
 	}
 	@Test (dependsOnMethods={"verifyReviewTopicButtonIsEnabled"})
 	public void verifyClickingOnReviewTopicButtonShowsReviewTopics () throws Exception {
-		Boolean actualBooleanResult=simpTestPageObject.verifyClickingOnReviewTopicButtonShowsReviewTopics();
-		Boolean expectedBooleanResult=true;
+		actualBooleanResult=simpTestPageObject.verifyClickingOnReviewTopicButtonShowsReviewTopics();
+		expectedBooleanResult=true;
 		Assert.assertTrue(actualBooleanResult.equals(expectedBooleanResult));		
 	}	
 	@Test (dependsOnMethods={"verifyClickingOnReviewTopicButtonShowsReviewTopics"})
 	public void verifyClickingOnReviewTopicShowsReviewTopicPage () throws Exception{	
-		String actualResult;
-		String expectedResult = "Hello, I'm a Narrative!";
+		expectedResult = "Hello, I'm a Narrative!";
 		actualResult = simpTestPageObject.verifyClickingOnReviewTopicShowsReviewTopicPage();
 		Assert.assertTrue(actualResult.equals(expectedResult));	
 	}
 	
 	@Test (dependsOnMethods={"verifyClickingOnReviewTopicShowsReviewTopicPage"})
 	public void verifyCloseReviewTopics () throws Exception{	
-		Boolean actualBooleanResult=simpTestPageObject.verifyCloseReviewTopics();
-		Boolean expectedBooleanResult=true;
+		actualBooleanResult=simpTestPageObject.verifyCloseReviewTopics();
+		expectedBooleanResult=true;
 		Assert.assertTrue(actualBooleanResult.equals(expectedBooleanResult));
 	}
-	@Test
+	@Test (dependsOnMethods={"verifyCloseReviewTopics"})
 	public void verifyShowHintButtonIsEnabled () throws Exception{	
+		actualBooleanResult=simpTestPageObject.verifyShowHintButtonIsEnabled();
+		expectedBooleanResult=true;
+		Assert.assertTrue(actualBooleanResult.equals(expectedBooleanResult));
 	}
-	@Test
-	public void verifyClickingOnShowHintButtonShowsHint () throws Exception {		
+	
+	@Test (dependsOnMethods={"verifyShowHintButtonIsEnabled"})
+	public void verifyClickingOnShowHintButtonShowsHint () throws Exception {
+		expectedResult = "Sample hint";
+		actualResult = simpTestPageObject.verifyClickingOnShowHintButtonShowsHint();
+		Assert.assertTrue(actualResult.contains(expectedResult));	
 	}	
-	@Test
-	public void verifyClickOnHideHint () throws Exception{	
+	@Test (dependsOnMethods={"verifyClickingOnShowHintButtonShowsHint"})
+	public void verifyShowHintIsChangedToHideHint () throws Exception{
+		expectedResult = "Hide Hint";
+		actualResult = simpTestPageObject.verifyShowHintIsChangedToHideHint();
+		Assert.assertTrue(actualResult.equals(expectedResult));
 	}
+	
+	@Test (dependsOnMethods={"verifyShowHintIsChangedToHideHint"})
+	public void verifyClickingOnHideHintClosesHint () throws Exception{
+		actualBooleanResult=simpTestPageObject.verifyClickingOnHideHintClosesHint();
+		expectedBooleanResult=false;
+		Assert.assertFalse(actualBooleanResult.equals(expectedBooleanResult));
+	}
+	@Test (dependsOnMethods={"verifyClickingOnHideHintClosesHint"})
 	public void verifyReferencesButtonIsEnabled () throws Exception{	
+		expectedBooleanResult=true;
+		actualBooleanResult=simpTestPageObject.verifyReferencesButtonIsEnabled();
+		Assert.assertTrue(actualBooleanResult.equals(expectedBooleanResult));
 	}
-	@Test
-	public void verifyClickOnReferencesButtonShowsReferencesList () throws Exception {		
+	@Test (dependsOnMethods={"verifyReferencesButtonIsEnabled"})
+	public void verifyClickOnReferencesButtonShowsReferencesList () throws Exception {	
+		String referenceItems = "Scientific Notation;Periodic Table;Tables";
+		expectedBooleanResult = true;
+		actualBooleanResult = simpTestPageObject.verifyClickOnReferencesButtonShowsReferencesList(referenceItems);
+		Assert.assertTrue(actualBooleanResult.equals(expectedBooleanResult));
 	}	
-	@Test
-	public void verifyClickingOnReferencesShowsReferencesPage () throws Exception{	
+	
+	@Test(dependsOnMethods={"verifyClickOnReferencesButtonShowsReferencesList"})
+	public void verifyClickingOnReferencesShowsReferencesPage () throws Exception{
+		String referenceItems = "Scientific Notation;Periodic Table;Tables";
+		expectedBooleanResult = true;
+		actualBooleanResult = simpTestPageObject.verifyClickingOnReferencesShowsReferencesPage(referenceItems);
+		Assert.assertTrue(actualBooleanResult.equals(expectedBooleanResult));		
 	}
-	@Test
-	public void verifyClosingReferencesPage () throws Exception{	
-	}	
-	@Test
+		
+	@Test(dependsOnMethods={"verifyClickingOnReferencesShowsReferencesPage"})
 	public void verifySubmitAnswerButtonOnMultipleChoiceItemBeforeSubmitIsActive() throws Exception {
+		expectedBooleanResult = true;
+		actualBooleanResult = simpTestPageObject.verifySubmitAnswerButtonOnMultipleChoiceItemBeforeSubmitIsActive();
+		Assert.assertTrue(actualBooleanResult.equals(expectedBooleanResult));		
 	}
-	@Test
+	
+	@Test (dependsOnMethods={"verifySubmitAnswerButtonOnMultipleChoiceItemBeforeSubmitIsActive"})
 	public void verifyTryAnotherButtonOnMultipleChoiceItemBeforeSubmitIsInactive() throws Exception {
+		expectedBooleanResult = true;
+		actualBooleanResult = simpTestPageObject.verifyTryAnotherButtonOnMultipleChoiceItemBeforeSubmitIsInactive();
+		Assert.assertTrue(actualBooleanResult.equals(expectedBooleanResult));	
 	}
-	@Test
-	public void verifyNextLinkOnMultipleChoiceItemBeforeSubmitIsActive () throws Exception{
+	
+	@Test (dependsOnMethods={"verifyTryAnotherButtonOnMultipleChoiceItemBeforeSubmitIsInactive"})
+	public void verifyNextLinkOnMultipleChoiceFirstItemIsActive () throws Exception{
+		expectedBooleanResult = true;
+		actualBooleanResult = simpTestPageObject.verifyNextLinkOnMultipleChoiceFirstItemIsActive();
+		Assert.assertTrue(actualBooleanResult.equals(expectedBooleanResult));	
 	}
-	@Test
+	
+	@Test (dependsOnMethods={"verifyNextLinkOnMultipleChoiceFirstItemIsActive"})
+	public void verifyPrevLinkOnMultipleChoiceFirstItemIsNotPresent () throws Exception{
+		actualBooleanResult = simpTestPageObject.verifyPrevLinkOnMultipleChoiceFirstItemIsNotPresent();
+		Assert.assertTrue(actualBooleanResult);	
+	}
+	
+	@Test (dependsOnMethods={"verifyPrevLinkOnMultipleChoiceFirstItemIsNotPresent"})
 	public void verifySubmittingIncorrectAnswerForMultipleChoiceShowsIncorrectRejoinder() throws Exception {
+		actualBooleanResult = simpTestPageObject.verifySubmittingIncorrectAnswerForMultipleChoiceShowsIncorrectRejoinder();
+		Assert.assertTrue(actualBooleanResult);			
 	}	
+	
 	@Test
 	public void verifyTryAnotherVersionButtonOnMultipleChoiceItemAfterSubmitIsActive() throws Exception {
 	}
+	
 	@Test
 	public void verifySubmitAnswerButtonOnMultipleChoiceItemAfterSubmitIsInactive() throws Exception {
-	}	
+	}
+	
 	@Test
 	public void verifyClickingOnTryAnotherVersionReloadsMultipleChoiceItem() throws Exception {
 	}
+	
 	@Test
 	public void verifyTryAnotherButtonOnMultipleChoiceItemAfterSubmitAndReloadIsInactive() throws Exception {
 	}

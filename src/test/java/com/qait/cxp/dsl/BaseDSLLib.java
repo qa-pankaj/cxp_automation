@@ -18,18 +18,18 @@ public class BaseDSLLib {
 	protected static BSimpleTestActivityKeywords simpTestPageObject;
 	
 	
-/*	protected String actualResult;
+	protected String actualResult;
 	protected String expectedResult;
 	protected Boolean actualBooleanResult;
-	protected Boolean expectedBooleanResult;*/
+	protected Boolean expectedBooleanResult;
 
 	public void _initPageObjects() throws Exception {
 		lnchActPageObject = new ALaunchActivityKeywords(driver);
 		simpTestPageObject = new BSimpleTestActivityKeywords(driver);
-/*		actualResult="";
+		actualResult="";
 		expectedResult="";
 		actualBooleanResult=true;
-		expectedBooleanResult = true;*/
+		expectedBooleanResult = true;
 	}
 
 	public void launchBrowser() throws Exception {

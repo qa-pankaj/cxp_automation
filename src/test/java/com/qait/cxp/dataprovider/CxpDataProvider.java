@@ -44,7 +44,7 @@ public class CxpDataProvider{
 	    }
 
 	public String getXmlFromFile(String fileName) throws Exception{
-		System.out.println("In CXP Data Provider Page ");
+	//	System.out.println("In CXP Data Provider Page ");
 		System.out.println("fileName to be fetched is " + fileName);
 		//System.out.println(getClass().getClassLoader().getResource("testdata/samples/"+fileName));
 		//URL fileURL = this.getClass().getClassLoader().getResource("testdata/samples/"+fileName);
@@ -58,11 +58,11 @@ public class CxpDataProvider{
 			fileURL=getClass().getClassLoader().getResource("testdata/samples/"+fileName);
 					
 		//URL fileURL = getClass().getClassLoader().getResource(fileName);
-		System.out.println("fetched file name ");
+	//	System.out.println("fetched file name ");
 		System.out.println(fileURL);
 		BufferedReader br = null;
 		String itemXml = "";	
-		System.out.println("itemXML value is " + itemXml);
+	//	System.out.println("itemXML value is " + itemXml);
 		//System.out.println(System.getProperty("java.class.path"));
 		try {
 			String sCurrentLine;
@@ -76,7 +76,7 @@ public class CxpDataProvider{
 				itemXml=itemXml+sCurrentLine+"\n";
 				
 			}
-			 System.out.println(itemXml);
+			// System.out.println(itemXml);
  
 		} catch (IOException e) {
 			e.printStackTrace();

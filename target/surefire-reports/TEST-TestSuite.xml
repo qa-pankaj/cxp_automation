@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="32.92" errors="0" skipped="0" tests="37" name="TestSuite">
+<testsuite failures="1" time="47.046" errors="0" skipped="0" tests="42" name="TestSuite">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\java\jdk1.7\jre\bin"/>
@@ -62,39 +62,48 @@
   </properties>
   <testcase time="0.094" classname="com.qait.cxp.maintest.ALaunchActivityPageTest" name="verifyActivityPageHeader"/>
   <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyClickingOnTryAnotherVersionReloadsFITBItem"/>
-  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyNextLinkOnMultipleChoiceItemBeforeSubmitIsActive"/>
-  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyShowHintButtonIsEnabled"/>
+  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyClickingOnTryAnotherVersionReloadsMultipleChoiceItem"/>
+  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyClikingOnNextLinkLoadsNextFITBItem"/>
+  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyNextLinkOnFITBItemAfterSubmitIsActive"/>
+  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyNextLinkOnMultipleChoiceItemAfterSubmitIsActive"/>
   <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifySubmitAnswerButtonOnFITBItemAfterSubmitAndReloadIsActive"/>
   <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifySubmitAnswerButtonOnFITBItemAfterSubmitIsInactive"/>
   <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifySubmitAnswerButtonOnFITBItemAfterSubmitReloadAndSubmitIsInactive"/>
+  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifySubmitAnswerButtonOnMultipleChoiceAfterSubmitAndReloadIsActive"/>
+  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifySubmitAnswerButtonOnMultipleChoiceItemAfterSubmitIsInactive"/>
   <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifySubmitAnswerButtonOnMultipleChoiceItemAfterSubmitReloadAndSubmitIsInactive"/>
+  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifySubmittingCorrectAnswerForFITBShowsCorrectRejoinder"/>
+  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifySubmittingCorrectAnswerForMultipleChoiceShowsShowsCorrectRejoinder"/>
   <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyTryAnotherButtonOnFITBItemAfterSubmitAndReloadIsInactive"/>
   <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyTryAnotherButtonOnMultipleChoiceItemAfterSubmitAndReloadIsInactive"/>
-  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyTryAnotherButtonOnMultipleChoiceItemBeforeSubmitIsInactive"/>
-  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyTryAnotherVersionButtonOnMultipleChoiceItemAfterSubmitIsActive"/>
-  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyClickingOnTryAnotherVersionReloadsMultipleChoiceItem"/>
-  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyNextLinkOnMultipleChoiceItemAfterSubmitIsActive"/>
-  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifySubmittingCorrectAnswerForFITBShowsCorrectRejoinder"/>
-  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyTryAnotherVersionButtonOnFITBItemAfterSubmitReloadAndSubmitIsActive"/>
-  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyClickOnHideHint"/>
-  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyClickingOnReferencesShowsReferencesPage"/>
-  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifySubmitAnswerButtonOnMultipleChoiceItemBeforeSubmitIsActive"/>
-  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyClickOnReferencesButtonShowsReferencesList"/>
   <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyTryAnotherVersionButtonOnFITBItemAfterSubmitIsActive"/>
-  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifySubmitAnswerButtonOnMultipleChoiceItemAfterSubmitIsInactive"/>
-  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyClikingOnNextLinkLoadsNextFITBItem"/>
-  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifySubmittingIncorrectAnswerForMultipleChoiceShowsIncorrectRejoinder"/>
-  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifySubmittingCorrectAnswerForMultipleChoiceShowsShowsCorrectRejoinder"/>
-  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyClickingOnShowHintButtonShowsHint"/>
-  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyClosingReferencesPage"/>
-  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyNextLinkOnFITBItemAfterSubmitIsActive"/>
-  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifySubmitAnswerButtonOnMultipleChoiceAfterSubmitAndReloadIsActive"/>
-  <testcase time="7.266" classname="com.qait.cxp.maintest.ALaunchActivityPageTest" name="verify_Select_Xml_and_Load"/>
-  <testcase time="3.343" classname="com.qait.cxp.maintest.ALaunchActivityPageTest" name="verify_Take_Assignment"/>
-  <testcase time="1.156" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifySimpleTestContentPageHeader"/>
-  <testcase time="2.344" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyMultipleChoiceItemIsLoaded"/>
-  <testcase time="1.156" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyReviewTopicButtonIsEnabled"/>
-  <testcase time="1.344" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyClickingOnReviewTopicButtonShowsReviewTopics"/>
-  <testcase time="1.703" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyClickingOnReviewTopicShowsReviewTopicPage"/>
-  <testcase time="1.656" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyCloseReviewTopics"/>
+  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyTryAnotherVersionButtonOnFITBItemAfterSubmitReloadAndSubmitIsActive"/>
+  <testcase time="0" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyTryAnotherVersionButtonOnMultipleChoiceItemAfterSubmitIsActive"/>
+  <testcase time="7.328" classname="com.qait.cxp.maintest.ALaunchActivityPageTest" name="verify_Select_Xml_and_Load"/>
+  <testcase time="5.422" classname="com.qait.cxp.maintest.ALaunchActivityPageTest" name="verify_Take_Assignment"/>
+  <testcase time="1.14" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifySimpleTestContentPageHeader"/>
+  <testcase time="0.094" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyShowScoresButtonIsActive"/>
+  <testcase time="0.078" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyReviewButtonIsActive"/>
+  <testcase time="0.062" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyNewTestButtonIsActive"/>
+  <testcase time="2.359" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyMultipleChoiceItemIsLoaded"/>
+  <testcase time="1.157" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyReviewTopicButtonIsEnabled"/>
+  <testcase time="1.39" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyClickingOnReviewTopicButtonShowsReviewTopics"/>
+  <testcase time="1.735" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyClickingOnReviewTopicShowsReviewTopicPage"/>
+  <testcase time="1.64" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyCloseReviewTopics"/>
+  <testcase time="1.157" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyShowHintButtonIsEnabled"/>
+  <testcase time="1.468" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyClickingOnShowHintButtonShowsHint"/>
+  <testcase time="0.094" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyShowHintIsChangedToHideHint"/>
+  <testcase time="0.438" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyClickingOnHideHintClosesHint"/>
+  <testcase time="1.156" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyReferencesButtonIsEnabled"/>
+  <testcase time="1.562" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyClickOnReferencesButtonShowsReferencesList"/>
+  <testcase time="5.438" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyClickingOnReferencesShowsReferencesPage"/>
+  <testcase time="0.093" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifySubmitAnswerButtonOnMultipleChoiceItemBeforeSubmitIsActive"/>
+  <testcase time="0.079" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyTryAnotherButtonOnMultipleChoiceItemBeforeSubmitIsInactive"/>
+  <testcase time="0.093" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyNextLinkOnMultipleChoiceFirstItemIsActive"/>
+  <testcase time="0.094" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifyPrevLinkOnMultipleChoiceFirstItemIsNotPresent"/>
+  <testcase time="0.422" classname="com.qait.cxp.maintest.BSimpleTestContentLaunchTest" name="verifySubmittingIncorrectAnswerForMultipleChoiceShowsIncorrectRejoinder">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifySubmittingIncorrectAnswerForMultipleChoiceShowsIncorrectRejoinder(BSimpleTestContentLaunchTest.java:153)
+</failure>
+  </testcase>
 </testsuite>

@@ -9,6 +9,7 @@ import java.net.URL;
 import javax.swing.text.StyledEditorKit.BoldAction;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -66,6 +67,17 @@ public abstract class AbstractPage {
 
 	protected void waitForElementToBeClickable(By locator) {
 		wait.until(ExpectedConditions.elementToBeClickable(locator));
+	}
+	
+	protected Boolean assertElementNotPresent(String text) {
+	    try {
+	        driver.findElement(By.cssSelector(text));
+	        System.out.println("Element with css <" + text + "> is present");
+	        return false;
+	    } catch (NoSuchElementException ex) {
+	    	return true;
+	        /* do nothing, link is not present, assert is passed */ 
+	    }
 	}
 	/*protected String getXmlFromFile(String fileName) throws Exception{
 		URL fileURL = AbstractPage.class.getResource(fileName);

@@ -1,5 +1,7 @@
 package com.qait.cxp.pageobjects;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -30,6 +32,12 @@ public class BSimpleTestContentLaunchPage extends AbstractPage {
 	@FindBy(how=How.CSS, using="a.assignment-button.show-scores")
 	protected WebElement showScoreButton;
 
+	@FindBy(how=How.CSS, using="a.assignment-button.review-button")
+	protected WebElement reviewButton;
+	
+	@FindBy(how=How.CSS, using="a.assignment-button.exit-button")
+	protected WebElement newTestButton;
+	
 	@FindBy(xpath = "//*[contains(@id, 'easyXDM_default')]")
 	protected WebElement frameApp;
 
@@ -53,4 +61,52 @@ public class BSimpleTestContentLaunchPage extends AbstractPage {
 	
 	@FindBy (css="div.popupCloseButton")
 	protected WebElement closeReviewTopic;
+	
+	@FindBy (css="div.hints-button.enabled")
+	protected WebElement showHintButton;
+	
+	@FindBy (css="div.activity > div.upslider > div > div.ci-popup > div.body")
+	protected WebElement sampleHint;
+	
+	@FindBy (css="div.activity > div.upslider > div > div.hints-button.enabled")
+	protected WebElement hideHintButton;
+	
+	@FindBy (css="div.references-button.enabled")
+	protected WebElement referencesButton;
+	
+	@FindBy (css="div.activity > div.upslider > div > div.references")
+	protected WebElement referencesList;
+	
+	@FindBy (css="div.activity > div.upslider > div > div.references > a")
+	protected List <WebElement> referencesListItems;
+	
+	@FindBy (css="div.button.submit-button.enabled")
+	protected WebElement submitAnswerButtonEnabled;
+	
+	@FindBy (css="div.button.retry-button.enabled")
+	protected WebElement retryButtonEnabled;
+
+	@FindBy (css="div.button.retry-button")
+	protected WebElement retryButtonDisabled;
+	
+	@FindBy (css="div.button.submit-button")
+	protected WebElement submitAnswerButtonDisabled;
+	
+	@FindBy (css="div.sel-prev.enabled")
+	protected WebElement prevLink;
+	
+	@FindBy (css="div.sel-next.enabled")
+	protected WebElement nextLink;
+	
+	//@FindBy (css="div.ci-content > div.ci-choices > div.ci-choice > span.ci-choice-indicator > input.ci-input > ")
+	@FindBy (xpath="//*[contains (@value, '2')]")
+	protected WebElement mcIncorrectRadioButton;
+	
+	@FindBy (xpath="//*[contains(@value, '8')]")
+	protected WebElement mcCorrectRadioButton;
+
+	
+	
+	
+	
 }
