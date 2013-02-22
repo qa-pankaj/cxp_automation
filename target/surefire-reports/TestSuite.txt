@@ -1,9 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 42, Failures: 1, Errors: 0, Skipped: 22, Time elapsed: 14.187 sec <<< FAILURE!
-verify_Select_Xml_and_Load(com.qait.cxp.maintest.ALaunchActivityPageTest)  Time elapsed: 0 sec  <<< FAILURE!
+Tests run: 42, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 45.343 sec <<< FAILURE!
+verifySubmittingIncorrectAnswerForMultipleChoiceShowsIncorrectRejoinder(com.qait.cxp.maintest.BSimpleTestContentLaunchTest)  Time elapsed: 0.422 sec  <<< FAILURE!
 java.lang.NullPointerException
-	at com.qait.cxp.dataprovider.CxpDataProvider.getXmlFromFile(CxpDataProvider.java:69)
-	at com.qait.cxp.maintest.ALaunchActivityPageTest.fetch_Xml_To_Load(ALaunchActivityPageTest.java:26)
-	at com.qait.cxp.maintest.ALaunchActivityPageTest.verify_Select_Xml_and_Load(ALaunchActivityPageTest.java:32)
+	at com.qait.cxp.maintest.BSimpleTestContentLaunchTest.verifySubmittingIncorrectAnswerForMultipleChoiceShowsIncorrectRejoinder(BSimpleTestContentLaunchTest.java:153)
